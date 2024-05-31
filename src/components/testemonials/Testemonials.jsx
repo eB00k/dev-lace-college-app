@@ -28,7 +28,7 @@ const testimonials = [
 function Testemonials() {
   return (
     <div className="page py-20 px-4 md:px-12 text-slate-900">
-      <SectionTitle>What our students says about us</SectionTitle>
+      <SectionTitle>What our students says</SectionTitle>
       <div className="flex flex-wrap -m-4">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="p-4 md:w-1/2 w-full">
