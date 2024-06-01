@@ -5,7 +5,7 @@ function Button({ children, className = "" }) {
   return (
     <button
       className={twMerge(
-        "px-4 py-2 border-none rounded-sm bg-white font-medium text-black text-sm shadow-sm cursor-pointer hover:opacity-90 transition-opacity",
+        "px-6 py-3 border-none rounded-sm bg-white font-medium text-black text-sm shadow-sm cursor-pointer hover:opacity-90 transition-opacity",
         className
       )}
     >

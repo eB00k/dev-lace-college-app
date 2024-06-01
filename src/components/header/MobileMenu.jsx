@@ -4,6 +4,7 @@ import { useClickOutsideMouseDown } from "../../hooks/useClickOutside";
 import { X } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { navLinks } from "../../config/constants";
+import { NavLink } from "react-router-dom";
 
 function MobileMenu() {
   const { mobileMenuOpen, setMobileMenuOpen } = useContext(HeaderContext);
@@ -14,8 +15,6 @@ function MobileMenu() {
   const handleCloseMenu = () => {
     setMobileMenuOpen(false);
   };
-
-  console.log("MobileMenu", mobileMenuOpen);
 
   return (
     mobileMenuOpen && (
@@ -48,16 +47,26 @@ function MobileMenu() {
           {/* Mobile Menu Content - START */}
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10 text-red-400 ">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.path}
-                  onClick={handleCloseMenu}
-                  className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.to ? (
+                  <NavLink
+                    to={link.to}
+                    onClick={handleCloseMenu}
+                    className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    {link.label}
+                  </NavLink>
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.path}
+                    onClick={handleCloseMenu}
+                    className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
             </div>
           </div>
           {/* Mobile Menu Content - END */}

@@ -21,11 +21,11 @@ function Hero() {
             </HighlightedText>
           </h1>
           <p className="my-6 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            commodi repellendus aspernatur quo, cupiditate officia laboriosam
-            necessitatibus et aut! Eos quis facilis nobis.
+            Join us at L.A.C.E., where innovation meets inspiration. Dive into
+            cutting-edge engineering programs and be part of a future-focused
+            community dedicated to excellence and sustainability.
           </p>
-          <Button>Join Now</Button>
+          <Button className="uppercase">Explore more</Button>
         </div>
       </div>
     </div>

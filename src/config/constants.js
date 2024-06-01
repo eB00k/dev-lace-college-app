@@ -1,9 +1,10 @@
+// Navigation links
 export const navLinks = [
-  { path: "#", label: "Home" },
-  { path: "#academics", label: "Academics" },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Us" },
+  { path: "/academics", label: "Academics" },
   { path: "#admissions", label: "Admissions" },
   { path: "#news-events", label: "News + Events" },
-  { path: "#about", label: "About Us" },
 ];
 
 // Define footer links data for each column
@@ -44,9 +45,9 @@ export const footerColumns = [
 ];
 
 export const listForMission = [
-  { text: "Lorem ipsum, dolor sit amet." },
-  { text: "Lorem ipsum, dolor sit amet." },
-  { text: "Lorem ipsum, dolor sit amet." },
+  { text: "History" },
+  { text: "Mission and Vision" },
+  { text: "Educational programs" },
 ];
 
 export const galleryImages = [

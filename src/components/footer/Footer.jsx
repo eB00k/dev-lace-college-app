@@ -1,5 +1,7 @@
 import React from "react";
 import { footerColumns } from "../../config/constants";
+import Logo from "../header/Logo";
+import logo from "../../assets/la-black-logo.png";
 
 // Define social icons data
 export const socialIcons = [
@@ -110,7 +112,10 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="text-main font-bold text-2xl">LACE</div>
+            <div>
+              <Logo logoSrc={logo} />
+              <span className="text-sm"> LIGHT ACADEMY COLLEGE OF ENGINEERING</span>
+            </div>
 
             <p className="mt-4 max-w-xs text-gray-500">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
