@@ -7,11 +7,11 @@ import Button from "../button/Button";
 import logo from "../../assets/la-yellow-logo.png";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
+import LanguageSelecter from "../langage-selector/LanguageSelecter";
 
 /* Mobile Toggle component */
 const MobileNavToggle = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useContext(HeaderContext);
-  console.log(mobileMenuOpen);
   return (
     <div className="flex lg:hidden">
       <button
@@ -37,9 +37,10 @@ const DesktopNav = () => {
       {navLinks.map((link) =>
         link.to ? (
           <NavLink
+            key={link.label}
             to={link.to}
             className={({ isActive }) =>
-              isActive && "text-main transition-colors"
+              isActive ? "text-main transition-colors" : ""
             }
           >
             {link.label}
@@ -63,10 +64,9 @@ function Navbar() {
     <nav className="w-full flex item-center justify-between p-3 lg:px-12">
       <Logo logoSrc={logo} />
       <DesktopNav />
-      <div className="hidden lg:flex justify-center items-center">
-        <a href="#contact">
-          <Button className="bg-main">Contact Us</Button>
-        </a>
+
+      <div className="hidden lg:flex justify-center items-center gap-2">
+        <LanguageSelecter />
       </div>
       <MobileNavToggle />
     </nav>

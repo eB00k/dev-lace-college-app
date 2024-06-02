@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Home from "../pages/home/Home";
 import BaseLayout from "../components/layouts/BaseLayout";
 import AboutPage from "../pages/about/AboutPage";
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
 ]);
 
 function Router() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback="Loading...">
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default Router;

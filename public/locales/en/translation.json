@@ -1,0 +1,134 @@
+{
+  "home": {
+    "heroSection": {
+      "title": "Welcome to the ",
+      "description": "Join us at L.A.C.E., where innovation meets inspiration. Dive into cutting-edge engineering programs and be part of a future-focused community dedicated to excellence and sustainability.",
+      "primaryButton": "Explore Programs",
+      "secondaryButton": "Contact Us"
+    },
+    "aboutSection": {
+      "title": "About Us",
+      "description": "Light Academy College of Engineering (L.A.C.E.) is an institution dedicated to advancing knowledge and innovation in the fields of engineering and technology. Located in the heart of a vibrant urban center, L.A.C.E. offers a dynamic learning environment that combines modern facilities, research, and a commitment to sustainability and environmental stewardship.",
+      "learnMoreButton": "Learn more",
+      "listItems": {
+        "history": "History",
+        "missionAndVision": "Mission and Vision",
+        "programs": "Educational programs"
+      }
+    },
+    "programsSection": {
+      "title": "Our Programs",
+      "programs": [
+        {
+          "name": "Software Engineering",
+          "description": "Our Software Engineering program equips students with the skills needed to design, develop, and maintain software systems. From front-end development to back-end infrastructure, students learn the latest technologies and best practices.",
+          "learnMore": "Learn more"
+        },
+        {
+          "name": "Cybersecurity",
+          "description": "In the Cybersecurity program, students learn to protect digital assets from cyber threats. With hands-on training in ethical hacking, network security, and cryptography, graduates are prepared for careers in information security.",
+          "learnMore": "Learn more"
+        },
+        {
+          "name": "IT & Entrepreneurship",
+          "description": "The IT & Entrepreneurship program combines technical skills with business acumen. Students learn to leverage technology for innovation and entrepreneurship, with courses in business analytics, project management, and digital marketing.",
+          "learnMore": "Learn more"
+        },
+        {
+          "name": "STEM Pedagogy",
+          "description": "Our STEM Pedagogy program trains educators in science, technology, engineering, and mathematics. Through curriculum development and instructional design, graduates inspire the next generation of STEM professionals.",
+          "learnMore": "Learn more"
+        }
+      ]
+    },
+    "reasonsSection": {
+      "title": "Why Our College?",
+      "cta": {
+        "title": "Ready to Apply?",
+        "description": "Take the next step towards your future at our College of Engineering. Contact us today to learn more about our programs and admission process.",
+        "buttonText": "Contact Us",
+        "buttonLink": "#contact"
+      },
+      "data": [
+        {
+          "title": "Affordable Education in English",
+          "description": "Our College of Engineering offers lower tuition rates compared to four-year universities, making education more accessible and reducing student debt. Tuition rates are 4,000 USD: Access to the licensed tailored curriculums, courses & specialization tracks of Coursera.org and personal laptop which student gets upon admission."
+        },
+        {
+          "title": "Small Class Sizes",
+          "description": "Smaller class sizes at our college allow for more personalized attention from instructors, fostering a better learning environment and stronger student-teacher relationships. 40 students per cohort."
+        },
+        {
+          "title": "Focused Programs",
+          "description": "Our College of Engineering offers focused, career-oriented programs that are designed to meet the needs of the local and global job market, ensuring that students gain relevant skills for immediate employment. Our College of Engineering offers four programs: Software Engineering, Cyber Security, IT & Entrepreneurship, STEAM Pedagogy."
+        },
+        {
+          "title": "Hands-On Learning",
+          "description": "College of Engineering emphasizes practical, hands-on learning experiences in their engineering programs, providing students with valuable real-world skills. Each curriculum supports multiple tracks of specialization."
+        },
+        {
+          "title": "Flexible Scheduling",
+          "description": "With options for part-time, self-study session and online classes, our college offers flexible scheduling to accommodate working students or those with other commitments."
+        },
+        {
+          "title": "Transfer Opportunities",
+          "description": "Our college has articulation agreements with four-year universities, making it easier for students to transfer credits and continue their education at a bachelor’s level."
+        },
+        {
+          "title": "Industry Connections",
+          "description": "Our college has strong ties with local and international industries and businesses, providing students with networking opportunities, internships, and job placement assistance."
+        },
+        {
+          "title": "Supportive Environment",
+          "description": "Our LA College of Engineering offers a supportive and inclusive environment with resources such as tutoring, counseling, and career services to help students succeed."
+        },
+        {
+          "title": "Community Engagement",
+          "description": "Being smaller and more localized, our LA College of Engineering encourages students to engage with the community through service learning, local/global contests, hackathons, projects, and collaborations, enhancing both personal and professional development."
+        },
+        {
+          "title": "Diverse Student Body",
+          "description": "The diverse student population at our college enriches the learning experience by bringing a variety of perspectives and backgrounds to the classroom."
+        }
+      ]
+    },
+    "gallerySection": {
+      "title": "Gallery",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam error ea veniam. A dolore amet dolores magnam consequuntur odio, expedita, dolorum iusto neque aliquam laborum minus cumque impedit ipsa officia eum earum porro repudiandae inventore ipsum! Quam ex laudantium modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fuga possimus necessitatibus doloribus et beatae, earum deleniti accusantium blanditiis, deserunt iure aliquam esse vitae minima porro voluptate quia exercitationem quidem!",
+      "images": [
+        {
+          "bgImage": "campus",
+          "title": "Campus"
+        },
+        {
+          "bgImage": "cafeteria",
+          "title": "Cafeteria"
+        },
+        {
+          "bgImage": "sport",
+          "title": "Sport"
+        },
+        {
+          "bgImage": "library",
+          "title": "Library"
+        }
+      ]
+    },
+    "campusSection": {
+      "title": "Our Campus"
+    },
+    "questionsSection": {
+      "title": "Frequently asked questions"
+    },
+    "contactSection": {
+      "sectionTitle": "Contact Us",
+      "description": "Feel free to contact us? Submit your message here and we will get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "sendMessage": "Send Message"
+    }
+  }
+}

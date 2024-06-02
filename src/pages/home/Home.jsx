@@ -1,13 +1,12 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
 import AboutSection from "../../components/about-us/AboutSection";
-import Catalog from "../../components/catalog/Catalog";
+import ProgramsCatalog from "../../components/catalog/ProgramsCatalog";
 import Gallery from "../../components/gallery/Gallery";
 import Campus from "../../components/campus/Campus";
 import Testemonials from "../../components/testemonials/Testemonials";
 import FAQ from "../../components/faq/FAQ";
 import ContactForm from "../../components/contact/ContactForm";
-import Reasons from "../../components/reasons/Reasons";
 import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
 
 function Home() {
@@ -18,21 +17,20 @@ function Home() {
       </section>
       <section id="about">
         <AboutSection />
-        <Catalog />
+        <ProgramsCatalog />
       </section>
       <section id="reasons">
-        {/* <Reasons /> */}
         <ReasonsToStudy />
       </section>
-      <section>
+      <section id="gallery">
         <Gallery />
       </section>
       <section id="campus">
         <Campus />
       </section>
-      <section id="testemonials">
+      {/* <section id="testemonials">
         <Testemonials />
-      </section>
+      </section> */}
       <section id="faq">
         <FAQ />
       </section>

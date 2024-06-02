@@ -5,26 +5,26 @@ import logo from "../../assets/la-black-logo.png";
 
 // Define social icons data
 export const socialIcons = [
+  // {
+  //   href: "www.instagram.com/light_academy.college/",
+  //   icon: (
+  //     <svg
+  //       className="h-6 w-6"
+  //       fill="currentColor"
+  //       viewBox="0 0 24 24"
+  //       aria-hidden="true"
+  //     >
+  //       <path
+  //         fillRule="evenodd"
+  //         d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+  //         clipRule="evenodd"
+  //       />
+  //     </svg>
+  //   ),
+  //   label: "Facebook",
+  // },
   {
-    href: "#",
-    icon: (
-      <svg
-        className="h-6 w-6"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-      >
-        <path
-          fillRule="evenodd"
-          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
-    label: "Facebook",
-  },
-  {
-    href: "#",
+    href: "https://www.instagram.com/light_academy.college",
     icon: (
       <svg
         className="h-6 w-6"
@@ -42,18 +42,31 @@ export const socialIcons = [
     label: "Instagram",
   },
   {
-    href: "#",
+    href: "https://api.whatsapp.com/send?phone=996755990550",
     icon: (
       <svg
-        className="h-6 w-6"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
+        viewBox="0 0 32 32"
+        className="w-6 h-6 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
       >
-        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        <path d="M16.021 0C7.177 0 .02 7.155.02 15.999c0 2.822.746 5.593 2.163 8.034L.026 32l7.193-2.128c2.36 1.3 5.038 1.992 7.792 1.992h.01c8.842 0 15.996-7.154 15.996-15.998S24.864 0 16.021 0zm9.147 23.187c-.379 1.07-2.214 2.063-3.053 2.197-.819.125-1.868.177-3.045-.188-.701-.22-1.608-.523-2.771-1.02-4.886-2.004-8.054-6.901-8.3-7.22-.244-.317-1.98-2.637-1.98-5.025 0-2.387 1.255-3.57 1.7-4.064.443-.493.97-.62 1.293-.62.32 0 .637.003.914.017.298.013.702-.113 1.1.84.427 1.015 1.453 3.525 1.58 3.779.126.252.21.553.04.874-.168.317-.254.512-.501.796-.247.282-.52.63-.745.844-.251.235-.51.49-.22.962.29.472 1.284 2.11 2.752 3.415 1.897 1.688 3.48 2.211 3.955 2.46.48.25.76.21 1.04-.126.285-.338 1.186-1.376 1.506-1.847.317-.47.635-.391 1.084-.235.45.156 2.868 1.35 3.36 1.596.494.247.823.37.944.57.123.197.123 1.129-.257 2.2z" />
       </svg>
     ),
-    label: "Twitter",
+    label: "WhatsApp",
+  },
+  {
+    href: "tg://resolve?domain=+996501990550",
+    icon: (
+      <svg
+        viewBox="0 0 32 32"
+        className="w-6 h-6 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16.002 0C7.164 0 .008 7.154.008 15.992c0 2.813.744 5.574 2.16 8.008L.016 32l7.19-2.128c2.356 1.3 5.03 1.99 7.784 1.99h.01c8.837 0 15.99-7.155 15.99-15.992C31.992 7.154 24.84 0 16.002 0zm7.405 9.212l-3.185 14.872c-.239 1.053-.871 1.313-1.76.817l-4.866-3.587-2.35 2.27c-.26.26-.478.479-.98.479l.353-5.001 9.106-8.216c.396-.353-.086-.55-.613-.197l-11.3 7.11-4.86-1.52c-1.056-.33-1.07-1.056.22-1.565l18.93-7.296c.88-.328 1.65.216 1.37 1.556z" />
+      </svg>
+    ),
+    label: "Telegram",
   },
 ];
 
@@ -114,13 +127,10 @@ const Footer = () => {
           <div>
             <div>
               <Logo logoSrc={logo} />
-              <span className="text-sm"> LIGHT ACADEMY COLLEGE OF ENGINEERING</span>
+              <span className="text-sm font-medium">
+                LIGHT ACADEMY COLLEGE OF ENGINEERING
+              </span>
             </div>
-
-            <p className="mt-4 max-w-xs text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-              cupiditate quae nam molestias.
-            </p>
 
             <SocialLinks />
           </div>

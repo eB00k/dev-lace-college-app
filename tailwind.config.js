@@ -5,7 +5,6 @@ export default {
     extend: {
       colors: {
         // main: "#82B3FF",
-        // main: "rgba(249,211,61,1)",
         main: "#F6C90E",
         "main-100": "#ddb50d",
         "main-gray": "#F5F7F8",
@@ -13,12 +12,10 @@ export default {
         "main-third": "#45474B",
         "dark-brown": "rgba(53,52,49,1)",
         yell: "#f6e05e",
-
-        // primary: "rgba(249,211,61,1)",
       },
       backgroundImage: {
         "hero-gradient":
-          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/hero-2.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/hero-1.jpg")',
         "highlight-gradient":
           "linear-gradient(120deg, rgba(249,211,61,1) 0%, rgba(249,211,61,1) 100%)",
         // "linear-gradient(120deg, #82B3FF 0%, #82B3FF 100%)",

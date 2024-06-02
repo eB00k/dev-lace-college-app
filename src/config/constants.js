@@ -2,7 +2,7 @@
 export const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
-  { path: "/academics", label: "Academics" },
+  { to: "/academics", label: "Academics" },
   { path: "#admissions", label: "Admissions" },
   { path: "#news-events", label: "News + Events" },
 ];
@@ -18,27 +18,31 @@ export const servicesLinks = [
 export const companyLinks = [
   { href: "#about", label: "About" },
   { href: "#campus", label: "Campus Life" },
-  { href: "#", label: "Accounts Review" },
+  { to: "/academics", label: "Accademics" },
+  { to: "/admissions", label: "Addmissions" },
 ];
 
 export const helpfulLinks = [
   { href: "#contact", label: "Contact" },
   { href: "#faq", label: "FAQs" },
-  { href: "#", label: "Live Chat" },
 ];
 
 export const contactLinks = [
   { href: "#", label: "+996 999 999", labelStart: "Phone" },
-  { href: "#", label: "lace@example.com", labelStart: "Email" },
   {
-    href: "#",
-    label: "Kyrgyzstan, Bishkek, Toktogul Street, 125/1",
+    href: "mailto:lightacademy.college@gmail.com",
+    label: "lightacademy.college@gmail.com",
+    labelStart: "Email",
+  },
+  {
+    href: "https://2gis.kg/bishkek/geo/70030076373364328/74.630361%2C42.829274?m=74.628363%2C42.829375%2F17.42",
+    label: "Саякбая Каралаева, 7а/1 ",
     labelStart: "Address",
   },
 ];
 
 export const footerColumns = [
-  { title: "Services", links: servicesLinks },
+  // { title: "Services", links: servicesLinks },
   { title: "Company", links: companyLinks },
   { title: "Helpful Links", links: helpfulLinks },
   { title: "Contacts", links: contactLinks },

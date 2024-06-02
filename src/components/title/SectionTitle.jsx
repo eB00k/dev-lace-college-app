@@ -6,7 +6,7 @@ function SectionTitle({ children, className = "" }) {
   return (
     <h2
       className={twMerge(
-        "text-3xl font-medium text-center mb-6 leading-7 section-title uppercase",
+        "text-3xl font-semibold text-center mb-6 leading-7 section-title uppercase",
         className
       )}
     >

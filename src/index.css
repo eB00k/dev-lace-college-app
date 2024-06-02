@@ -39,11 +39,24 @@
   }
 
   .card-reasons {
-    @apply bg-slate-200 rounded-lg h-auto text-slate-700 flex justify-center items-center;
+    @apply bg-slate-100 rounded-lg h-auto text-slate-700 flex justify-center items-center;
   }
 
   .section-title {
     font-family: 'Teko', Inter, sans-serif;
+  }
+  
+
+  .page-title {
+    @apply text-2xl font-bold my-4 text-slate-900;
+  }
+
+  .page-subtitle {
+    @apply font-semibold text-xl my-2 text-slate-800;
+  }
+
+  .page-paragraph {
+    @apply text-base my-2 text-slate-700;
   }
 }
 
