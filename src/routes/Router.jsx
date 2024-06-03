@@ -5,6 +5,7 @@ import Home from "../pages/home/Home";
 import BaseLayout from "../components/layouts/BaseLayout";
 import AboutPage from "../pages/about/AboutPage";
 import Academics from "../pages/academics/Academics";
+import Spinner from "../components/spinner/Spinner";
 
 // Define the router configuration
 const router = createBrowserRouter([
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
 
 function Router() {
   return (
-    <Suspense fallback="Loading...">
+    <Suspense fallback={<Spinner />}>
       <RouterProvider router={router} />
     </Suspense>
   );

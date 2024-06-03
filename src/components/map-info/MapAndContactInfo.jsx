@@ -47,13 +47,13 @@ function MapAndContactInfo() {
                 <h3 className="text-lg font-medium text-slate-900">
                   {t("home.contactSection.contact")}
                 </h3>
-                <p className="mt-1 text-slate-600 flex justify-start items-center gap-2">
+                <article className="mt-1 text-slate-600 flex justify-start items-center gap-2">
                   <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                     {socialMediaIcons.email}
                   </span>
                   <span>lightacademy.college@gmail.com</span>
-                </p>
-                <p className="mt-1 text-slate-600 flex justify-start items-center gap-4">
+                </article>
+                <article className="mt-1 text-slate-600 flex justify-start items-center gap-4">
                   <div className="flex justify-center items-center gap-2">
                     <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                       {socialMediaIcons.phone}
@@ -66,8 +66,8 @@ function MapAndContactInfo() {
                     </span>
                     <span>+996 501 99 05 50</span>
                   </div>
-                </p>
-                <p className="mt-1 text-slate-600 flex justify-start items-center gap-4">
+                </article>
+                <article className="mt-1 text-slate-600 flex justify-start items-center gap-4">
                   <div className="flex justify-center items-center gap-2">
                     <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                       {socialMediaIcons.phone}
@@ -80,7 +80,7 @@ function MapAndContactInfo() {
                     </span>
                     <span>+996 755 99 05 50</span>
                   </div>
-                </p>
+                </article>
               </div>
             </div>
           </div>
