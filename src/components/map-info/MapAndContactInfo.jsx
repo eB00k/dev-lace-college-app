@@ -51,7 +51,7 @@ function MapAndContactInfo() {
                   <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                     {socialMediaIcons.email}
                   </span>
-                  <span>{t("home.contactSection.email")}</span>
+                  <span>lightacademy.college@gmail.com</span>
                 </p>
                 <p className="mt-1 text-slate-600 flex justify-start items-center gap-4">
                   <div className="flex justify-center items-center gap-2">
