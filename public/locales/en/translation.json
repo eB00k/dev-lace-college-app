@@ -128,7 +128,20 @@
       "phone": "Phone Number",
       "subject": "Subject",
       "message": "Message",
-      "sendMessage": "Send Message"
+      "sendMessage": "Send Message",
+      "address": {
+        "title": "Address",
+        "content": "7a, 1 Sayakbay Karalaev St, Bishkek"
+      },
+      "hours": {
+        "title": "Hours",
+        "content": {
+          "mondayToFriday": "Monday - Friday: 9:00 - 17:00",
+          "saturday": "Saturday: 10:00 - 16:00",
+          "sunday": "Sunday: Closed"
+        }
+      },
+      "contact": "Contact"
     }
   },
   "about": {
