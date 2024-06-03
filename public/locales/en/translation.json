@@ -1,4 +1,11 @@
 {
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "academics": "Academics",
+    "admissions": "Admissions",
+    "news": "News + Events"
+  },
   "home": {
     "heroSection": {
       "title": "Welcome to the ",

@@ -1,10 +1,10 @@
 // Navigation links
 export const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
-  { to: "/academics", label: "Academics" },
-  { path: "#admissions", label: "Admissions" },
-  { path: "#news-events", label: "News + Events" },
+  { to: "/", label: "navbar.home" },
+  { to: "/about", label: "navbar.about" },
+  { to: "/academics", label: "navbar.academics" },
+  { path: "#admissions", label: "navbar.admissions" },
+  { path: "#news-events", label: "navbar.news" },
 ];
 
 export const companyLinks = [

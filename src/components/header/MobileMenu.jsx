@@ -6,12 +6,15 @@ import { twMerge } from "tailwind-merge";
 import { navLinks } from "../../config/constants";
 import { NavLink } from "react-router-dom";
 import LanguageSelecter from "../langage-selector/LanguageSelecter";
+import { useTranslation } from "react-i18next";
 
 function MobileMenu() {
   const { mobileMenuOpen, setMobileMenuOpen } = useContext(HeaderContext);
   const mobileMenuRef = useClickOutsideMouseDown(() =>
     setMobileMenuOpen(false)
   );
+
+  const { t } = useTranslation();
 
   const handleCloseMenu = () => {
     setMobileMenuOpen(false);
@@ -56,7 +59,7 @@ function MobileMenu() {
                     onClick={handleCloseMenu}
                     className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    {link.label}
+                    {t(link.label)}
                   </NavLink>
                 ) : (
                   <a
@@ -65,7 +68,7 @@ function MobileMenu() {
                     onClick={handleCloseMenu}
                     className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    {link.label}
+                    {t(link.label)}
                   </a>
                 )
               )}
