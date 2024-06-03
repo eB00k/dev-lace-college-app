@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Input = ({ type = "text", id, name, label, className, required }) => {
   return (
     <div className="relative">
-      <label htmlFor={id} className="leading-7 text-sm text-slate-600">
+      <label htmlFor={id} className="leading-7 text-base text-slate-600">
         {label}
       </label>
       {type === "textarea" ? (
@@ -60,10 +60,10 @@ function ContactForm() {
   };
 
   return (
-    <div className="page py-20 px-4 md:px-12">
+    <div className="page pt-20 px-4 md:px-12">
       <div className="flex flex-col text-center w-full mb-12 text-slate-900">
         <SectionTitle>{t("home.contactSection.sectionTitle")}</SectionTitle>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-sm">
+        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
           {t("home.contactSection.description")}
         </p>
       </div>

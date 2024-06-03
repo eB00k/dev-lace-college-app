@@ -2,17 +2,23 @@ import React from "react";
 import Button from "../button/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { twMerge } from "tailwind-merge";
 
-function HighlightedText({ children }) {
+function HighlightedText({ children, className = "" }) {
   return (
-    <span className="bg-highlight-gradient bg-no-repeat bg-full-40 bg-bottom-10">
+    <span
+      className={twMerge(
+        "bg-h-gradient inline bg-no-repeat bg-full-40 bg-bottom-10",
+        className
+      )}
+    >
       {children}
     </span>
   );
 }
 
 function Hero() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="page h-screen max-h-[1200px] bg-slate-800 bg-hero-gradient bg-no-repeat bg-cover bg-center w-full flex items-center justify-center px-6">
       <div className="text-center text-white">

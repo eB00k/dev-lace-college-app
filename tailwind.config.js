@@ -16,8 +16,10 @@ export default {
       backgroundImage: {
         "hero-gradient":
           'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/hero-1.jpg")',
-        "highlight-gradient":
-          "linear-gradient(120deg, rgba(249,211,61,1) 0%, rgba(249,211,61,1) 100%)",
+        // "h-gradient":
+        //   "linear-gradient(120deg, rgba(249,211,61,1) 0%, rgba(249,211,61,1) 100%)",
+        "h-gradient":
+          "linear-gradient(180deg, rgba(255,255,255,0) 65%, #F6C90E 65%)",
         // "linear-gradient(120deg, #82B3FF 0%, #82B3FF 100%)",
         campus: "url('./assets/campus-1.jpg')",
         mission: "url('./assets/mission-1.jpg')",

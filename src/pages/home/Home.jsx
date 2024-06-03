@@ -8,6 +8,7 @@ import Testemonials from "../../components/testemonials/Testemonials";
 import FAQ from "../../components/faq/FAQ";
 import ContactForm from "../../components/contact/ContactForm";
 import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
+import MapAndContactInfo from "../../components/map-info/MapAndContactInfo";
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function Home() {
       </section>
       <section id="contact">
         <ContactForm />
+        <MapAndContactInfo />
       </section>
     </>
   );
