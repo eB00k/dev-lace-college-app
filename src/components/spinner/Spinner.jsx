@@ -4,9 +4,9 @@ function Spinner() {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="relative inline-flex">
-        <div className="w-10 h-10 bg-main rounded-full"></div>
-        <div className="w-10 h-10 bg-main rounded-full absolute top-0 left-0 animate-ping"></div>
-        <div className="w-10 h-10 bg-main rounded-full absolute top-0 left-0 animate-pulse"></div>
+        <div className="w-14 h-14 bg-main rounded-full"></div>
+        <div className="w-14 h-14 bg-main rounded-full absolute top-0 left-0 animate-ping"></div>
+        <div className="w-14 h-14 bg-main rounded-full absolute top-0 left-0 animate-pulse"></div>
       </div>
     </div>
   );

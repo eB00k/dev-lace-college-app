@@ -4,11 +4,11 @@ import AboutSection from "../../components/about-us/AboutSection";
 import ProgramsCatalog from "../../components/catalog/ProgramsCatalog";
 import Gallery from "../../components/gallery/Gallery";
 import Campus from "../../components/campus/Campus";
-import Testemonials from "../../components/testemonials/Testemonials";
+// import Testemonials from "../../components/testemonials/Testemonials";
 import FAQ from "../../components/faq/FAQ";
-import ContactForm from "../../components/contact/ContactForm";
 import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
 import MapAndContactInfo from "../../components/map-info/MapAndContactInfo";
+import ContactForm2 from "../../components/contact/ContactForm2";
 
 function Home() {
   return (
@@ -36,7 +36,7 @@ function Home() {
         <FAQ />
       </section>
       <section id="contact">
-        <ContactForm />
+        <ContactForm2 />
         <MapAndContactInfo />
       </section>
     </>
