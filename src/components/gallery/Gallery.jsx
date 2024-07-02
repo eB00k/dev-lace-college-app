@@ -11,7 +11,7 @@ const imageMappings = {
   library: "bg-gallery-4",
 };
 
-const ImageCard = ({ bgImage, title }) => {
+const ImageCard = ({ bgImage, title, index }) => {
   return (
     <div
       className={twMerge(
@@ -19,10 +19,13 @@ const ImageCard = ({ bgImage, title }) => {
         bgImage
       )}
     >
-      <div className="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+      <div className="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900 opacity-90"></div>
       <main className="p-5 z-10">
         <span className="text-md tracking-tight font-medium leading-7 font-regular text-white ">
-          {title}
+          {
+            //title
+            `0${index}`
+          }
         </span>
       </main>
     </div>
@@ -45,6 +48,7 @@ const Gallery = () => {
             key={index}
             bgImage={imageMappings[image.bgImage]}
             title={image.title}
+            index={index + 1}
           />
         ))}
       </div>

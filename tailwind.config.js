@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // main: "#82B3FF",
         main: "#F6C90E",
         "main-100": "#ddb50d",
         "main-gray": "#F5F7F8",
@@ -15,18 +14,15 @@ export default {
       },
       backgroundImage: {
         "hero-gradient":
-          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/hero-1.jpg")',
-        // "h-gradient":
-        //   "linear-gradient(120deg, rgba(249,211,61,1) 0%, rgba(249,211,61,1) 100%)",
+          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/students_5.jpeg")',
         "h-gradient":
           "linear-gradient(180deg, rgba(255,255,255,0) 65%, #F6C90E 65%)",
-        // "linear-gradient(120deg, #82B3FF 0%, #82B3FF 100%)",
-        campus: "url('./assets/campus-1.jpg')",
-        mission: "url('./assets/mission-1.jpg')",
-        "gallery-1": "url('./assets/gallery-1.jpg')",
-        "gallery-2": "url('./assets/gallery-2.jpg')",
-        "gallery-3": "url('./assets/gallery-3.jpg')",
-        "gallery-4": "url('./assets/gallery-4.jpg')",
+        campus: "url('./assets/college_outside_1.jpeg')",
+        mission: "url('./assets/students_6.jpeg')",
+        "gallery-1": "url('./assets/students_1.jpeg')",
+        "gallery-2": "url('./assets/students_2.jpeg')",
+        "gallery-3": "url('./assets/students_3.jpeg')",
+        "gallery-4": "url('./assets/class_students_3.jpeg')",
       },
       backgroundSize: {
         "full-40": "100% 40%",
