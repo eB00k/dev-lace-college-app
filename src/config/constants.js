@@ -11,7 +11,7 @@ export const companyLinks = [
   { href: "#about", label: "About L.A.C.E" },
   { href: "#campus", label: "Campus Life" },
   { to: "/academics", label: "Accademics" },
-  { to: "/admissions", label: "Addmissions" },
+  { to: "/admissions", label: "Admissions" },
 ];
 
 export const helpfulLinks = [
@@ -27,14 +27,13 @@ export const contactLinks = [
     labelStart: "Email",
   },
   {
-    href: "https://2gis.kg/bishkek/geo/70030076373364328/74.630361%2C42.829274?m=74.628363%2C42.829375%2F17.42",
+    href: "https://2gis.kg/bishkek/firm/70000001089690237/74.630404%2C42.829258?m=74.630042%2C42.829236%2F19.87",
     label: "7а, 1 Sayakbay Karalaev St, Bishkek",
     labelStart: "Address",
   },
 ];
 
 export const footerColumns = [
-  // { title: "Services", links: servicesLinks },
   { title: "Main", links: companyLinks },
   { title: "Helpful Links", links: helpfulLinks },
   { title: "Contacts", links: contactLinks },

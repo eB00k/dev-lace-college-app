@@ -8,7 +8,8 @@
   },
   "home": {
     "heroSection": {
-      "title": "Welcome to the ",
+      "welcome": "Welcome to the",
+      "title": "Light Academy College of Engineering",
       "description": "Join us at L.A.C.E., where innovation meets inspiration. Dive into cutting-edge engineering programs and be part of a future-focused community dedicated to excellence and sustainability.",
       "primaryButton": "Explore Programs",
       "secondaryButton": "Contact Us"

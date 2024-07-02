@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
 
         <p className="text-xs text-gray-500">
-          &copy; 2024. LACE. All rights reserved.
+          &copy; 2024. L.A.C.E All rights reserved.
         </p>
       </div>
     </footer>

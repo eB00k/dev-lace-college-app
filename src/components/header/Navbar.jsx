@@ -3,7 +3,6 @@ import { HeaderContext } from "./Header";
 import { twMerge } from "tailwind-merge";
 import { AlignJustify } from "lucide-react";
 import { navLinks } from "../../config/constants";
-import Button from "../button/Button";
 import logo from "../../assets/la-yellow-logo.png";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";

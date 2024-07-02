@@ -24,10 +24,8 @@ function Hero() {
       <div className="text-center text-white">
         <div className="max-w-[800px]">
           <h1 className="text-3xl md:text-5xl font-bold max-w-[740px]">
-            <span className="block">{t("home.heroSection.title")}</span>
-            <HighlightedText>
-              Light Academy College of Engineering
-            </HighlightedText>
+            <span className="block">{t("home.heroSection.welcome")}</span>
+            <HighlightedText>{t("home.heroSection.title")}</HighlightedText>
           </h1>
           <p className="my-6 text-base">{t("home.heroSection.description")}</p>
           <div className="flex justify-center gap-4">
