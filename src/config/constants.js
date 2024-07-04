@@ -4,12 +4,10 @@ export const navLinks = [
   { to: "/about", label: "navbar.about" },
   { to: "/academics", label: "navbar.academics" },
   { path: "#admissions", label: "navbar.admissions" },
-  { path: "#news-events", label: "navbar.news" },
 ];
 
 export const companyLinks = [
   { href: "#about", label: "About L.A.C.E" },
-  { href: "#campus", label: "Campus Life" },
   { to: "/academics", label: "Accademics" },
   { to: "/admissions", label: "Admissions" },
 ];
@@ -20,7 +18,11 @@ export const helpfulLinks = [
 ];
 
 export const contactLinks = [
-  { href: "#", label: "+996 501 99 05 50", labelStart: "Phone" },
+  {
+    href: "tel:+996501990550",
+    label: "+996 501 99 05 50",
+    labelStart: "Phone",
+  },
   {
     href: "mailto:lightacademy.college@gmail.com",
     label: "lightacademy.college@gmail.com",

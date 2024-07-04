@@ -90,7 +90,7 @@ const FAQ = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="page py-20 px-4 sm:px-6 md:px-8 text-slate-900">
+    <div className="page py-14 sm:py-20 px-4 sm:px-6 md:px-8 text-slate-900">
       <div className="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row max-lg:max-w-2xl mx-auto max-w-full">
         <div className="lg:max-w-3xl">
           <div className="mb-6 lg:mb-16">

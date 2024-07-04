@@ -30,7 +30,7 @@ function ProgramsCatalog() {
     },
   ];
   return (
-    <div className="page py-20 px-4 md:px-8 text-slate-900">
+    <div className="page py-14 sm:py-20 px-4 md:px-8 text-slate-900">
       <SectionTitle>{t("home.programsSection.title")}</SectionTitle>
       <div className="flex flex-wrap justify-center gap-6 items-stretch">
         {programs.map((program, index) => (

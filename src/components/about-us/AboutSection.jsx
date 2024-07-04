@@ -18,7 +18,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="page py-20 px-4 sm:px-6 md:px-8 text-slate-900">
+    <div className="page py-14 sm:py-20 px-4 sm:px-6 md:px-8 text-slate-900">
       <div className="flex flex-col items-center md:flex-row justify-center gap-12">
         <div className="w-full max-w-[500px] h-96 p-1.5 bg-white shadow-md rounded-md">
           <div className="w-full h-full bg-mission bg-no-repeat bg-cover bg-center rounded-md"></div>

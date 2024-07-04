@@ -33,7 +33,7 @@ export default {
       keyframes: {
         pulseRing: {
           "0%": { transform: "scale(0)", opacity: "1" },
-          "100%": { transform: "scale(1.3)", opacity: "0" },
+          "100%": { transform: "scale(1.4)", opacity: "0" },
         },
         shimmer: {
           "0%": { backgroundPosition: "200% 0" },
@@ -43,7 +43,7 @@ export default {
       },
       animation: {
         pulseRing: "pulseRing 1.5s cubic-bezier(0.7, 0, 0.3, 1) infinite",
-        shimmer: "shimmer 4s linear infinite",
+        shimmer: "shimmer 3.5s linear infinite",
       },
     },
   },
@@ -53,7 +53,7 @@ export default {
         {
           ".shimmer-gradient": {
             backgroundImage:
-              "linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.6) 50%, transparent 75%, transparent 100%)",
+              "linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.65) 50%, transparent 75%, transparent 100%)",
           },
         },
         ["responsive", "hover"]

@@ -40,7 +40,7 @@ const Gallery = () => {
   });
 
   return (
-    <div className="page py-20 text-slate-900">
+    <div className="page py-14 sm:py-20 text-slate-900">
       <SectionTitle>{t("home.gallerySection.title")}</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-0">
         {galleryImages.map((image, index) => (

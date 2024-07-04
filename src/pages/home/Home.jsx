@@ -3,8 +3,6 @@ import Hero from "../../components/hero/Hero";
 import AboutSection from "../../components/about-us/AboutSection";
 import ProgramsCatalog from "../../components/catalog/ProgramsCatalog";
 import Gallery from "../../components/gallery/Gallery";
-import Campus from "../../components/campus/Campus";
-// import Testemonials from "../../components/testemonials/Testemonials";
 import FAQ from "../../components/faq/FAQ";
 import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
 import MapAndContactInfo from "../../components/map-info/MapAndContactInfo";
