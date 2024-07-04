@@ -16,7 +16,6 @@ function HighlightedText({ children, className = "" }) {
     </span>
   );
 }
-
 function Hero() {
   const { t } = useTranslation();
   return (
@@ -33,9 +32,14 @@ function Hero() {
               <Button>{t("home.heroSection.primaryButton")}</Button>
             </Link>
             <a href="#contact">
-              <Button className="bg-main">
-                {t("home.heroSection.secondaryButton")}
-              </Button>
+              <div className="relative">
+                <Button className="relative bg-main shadow-lg z-10">
+                  {t("home.heroSection.secondaryButton")}
+                </Button>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 rounded-full border-4 border-yellow-300 animate-pulseRing"></div>
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -43,5 +47,4 @@ function Hero() {
     </div>
   );
 }
-
 export default Hero;

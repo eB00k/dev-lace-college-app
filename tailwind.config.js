@@ -30,6 +30,15 @@ export default {
       backgroundPosition: {
         "bottom-10": "0 90%",
       },
+      keyframes: {
+        pulseRing: {
+          "0%": { transform: "scale(0)", opacity: "1" },
+          "100%": { transform: "scale(1.3)", opacity: "0" },
+        },
+      },
+      animation: {
+        pulseRing: "pulseRing 1.5s cubic-bezier(0.7, 0, 0.3, 1) infinite",
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
