@@ -1,11 +1,18 @@
 import React, { Suspense } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
+import ReactGA from "react-ga4";
 import Home from "../pages/home/Home";
 import BaseLayout from "../components/layouts/BaseLayout";
 import AboutPage from "../pages/about/AboutPage";
 import Academics from "../pages/academics/Academics";
 import Spinner from "../components/spinner/Spinner";
+
+// Initialize Google Analytics
+ReactGA.initialize("G-CGRMDSBGSZ");
 
 // Define the router configuration
 const router = createBrowserRouter([
@@ -32,10 +39,20 @@ const router = createBrowserRouter([
   },
 ]);
 
+function GAListener() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+}
+
 function Router() {
   return (
     <Suspense fallback={<Spinner />}>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <GAListener />
+      </RouterProvider>
     </Suspense>
   );
 }
