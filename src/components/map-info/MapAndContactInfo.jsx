@@ -61,14 +61,14 @@ function MapAndContactInfo() {
                   </article>
                   <article className="mt-1 text-slate-600 flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
                     <div
-                      itemscope
-                      itemtype="https://schema.org/LocalBusiness"
+                      itemScope
+                      itemType="https://schema.org/LocalBusiness"
                       className="flex justify-center items-center gap-2"
                     >
                       <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                         {socialMediaIcons.phone}
                       </span>
-                      <span itemprop="telephone">
+                      <span itemProp="telephone">
                         <a href="tel:+996501990550" className="text-slate-700">
                           +996 501 99 05 50
                         </a>
@@ -83,14 +83,14 @@ function MapAndContactInfo() {
                   </article>
                   <article className="mt-1 text-slate-600 flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
                     <div
-                      itemscope
-                      itemtype="https://schema.org/LocalBusiness"
+                      itemScope
+                      itemType="https://schema.org/LocalBusiness"
                       className="flex justify-center items-center gap-2"
                     >
                       <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
                         {socialMediaIcons.phone}
                       </span>
-                      <span itemprop="telephone">
+                      <span itemProp="telephone">
                         <a href="tel:+996755990550" className="text-slate-700">
                           +996 755 99 05 50
                         </a>

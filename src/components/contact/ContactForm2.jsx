@@ -54,7 +54,6 @@ function ContactForm2() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
   const {
     register,
     handleSubmit,
@@ -65,17 +64,20 @@ function ContactForm2() {
     clearErrors,
   } = useForm();
   const form = useRef();
+  const recaptchaRef = useRef(null);
 
   const onCaptchaChange = (token) => {
-    setCaptchaToken(token);
     setValue("token", token);
-    clearErrors("general"); // Clear general error when reCAPTCHA is successfully completed
+    clearErrors("general");
   };
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
-    if (!captchaToken) {
+    let token = await recaptchaRef.current.executeAsync();
+    setValue("token", token);
+
+    if (!token) {
       setIsSubmitting(false);
       setError("general", {
         type: "manual",
@@ -88,8 +90,9 @@ function ContactForm2() {
       from_name: data.name,
       email: data.email,
       message: data.message,
-      "g-recaptcha-response": data.token,
+      "g-recaptcha-response": token,
     };
+    console.log(templateParams);
 
     try {
       const response = await emailjs.send(
@@ -98,10 +101,11 @@ function ContactForm2() {
         templateParams,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
+
       window.sessionStorage.setItem("formSubmitted", true);
       reset();
-      setCaptchaToken(null);
       navigate("/thank-you");
+      recaptchaRef.current.reset();
     } catch (error) {
       alert("Failed to send the message, please try again.");
     } finally {
@@ -156,7 +160,9 @@ function ContactForm2() {
             </div>
             <div className="p-2 w-full">
               <ReCAPTCHA
+                ref={recaptchaRef}
                 sitekey={import.meta.env.VITE_APP_RECAPTCHA_SITE_KEY}
+                size="invisible"
                 onChange={onCaptchaChange}
               />
             </div>
