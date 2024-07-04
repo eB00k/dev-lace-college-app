@@ -29,7 +29,10 @@ function Hero() {
           <p className="my-6 text-base">{t("home.heroSection.description")}</p>
           <div className="flex justify-center gap-4">
             <Link to="/academics">
-              <Button>{t("home.heroSection.primaryButton")}</Button>
+              <Button className="relative from-slate-200 bg-gradient-to-r to-slate-100">
+                <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
+                {t("home.heroSection.primaryButton")}
+              </Button>
             </Link>
             <a href="#contact">
               <div className="relative">

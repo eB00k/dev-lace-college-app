@@ -35,11 +35,29 @@ export default {
           "0%": { transform: "scale(0)", opacity: "1" },
           "100%": { transform: "scale(1.3)", opacity: "0" },
         },
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0" },
+          "25%": { backgroundPosition: "-100% 0" },
+          "100%": { backgroundPosition: "-100% 0" },
+        },
       },
       animation: {
         pulseRing: "pulseRing 1.5s cubic-bezier(0.7, 0, 0.3, 1) infinite",
+        shimmer: "shimmer 4s linear infinite",
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".shimmer-gradient": {
+            backgroundImage:
+              "linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.6) 50%, transparent 75%, transparent 100%)",
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
+  ],
 };

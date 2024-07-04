@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import SectionTitle from "../title/SectionTitle";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Input = ({
   type = "text",
@@ -51,6 +52,7 @@ const Input = ({
 
 function ContactForm2() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
   const {
@@ -86,8 +88,6 @@ function ContactForm2() {
       from_name: data.name,
       email: data.email,
       message: data.message,
-      phone: data.phone,
-      subject: data.subject,
       "g-recaptcha-response": data.token,
     };
 
@@ -98,11 +98,11 @@ function ContactForm2() {
         templateParams,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
-      alert("The message was successfully sent!");
+      window.sessionStorage.setItem("formSubmitted", true);
       reset();
       setCaptchaToken(null);
+      navigate("/thank-you");
     } catch (error) {
-      console.error("EmailJS Error:", error);
       alert("Failed to send the message, please try again.");
     } finally {
       setIsSubmitting(false);
@@ -143,28 +143,6 @@ function ContactForm2() {
                 errors={errors}
               />
             </div>
-            <div className="p-2 w-1/2">
-              <Input
-                type="tel"
-                id="tel"
-                name="phone"
-                label={t("home.contactSection.phone")}
-                required
-                register={register}
-                errors={errors}
-              />
-            </div>
-            <div className="p-2 w-1/2">
-              <Input
-                type="text"
-                id="subject"
-                name="subject"
-                label={t("home.contactSection.subject")}
-                required
-                register={register}
-                errors={errors}
-              />
-            </div>
             <div className="p-2 w-full">
               <Input
                 type="textarea"
@@ -185,9 +163,10 @@ function ContactForm2() {
             <div className="p-2 w-full">
               <Button
                 type="submit"
-                className="bg-main text-white"
+                className="bg-main text-white relative"
                 disabled={isSubmitting}
               >
+                <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
                 {isSubmitting
                   ? "Submitting..."
                   : t("home.contactSection.sendMessage")}

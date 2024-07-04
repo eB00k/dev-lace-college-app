@@ -57,7 +57,8 @@ function ReasonsToStudy() {
             {t("home.reasonsSection.cta.description")}
           </p>
           <a href={t("home.reasonsSection.cta.buttonLink")}>
-            <Button className="bg-blue-500 hover:bg-blue-600 transition-colors text-white flex text-base">
+            <Button className="relative bg-blue-500 transition-colors text-white flex text-base">
+              <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
               <span>{t("home.reasonsSection.cta.buttonText")}</span>
               <MoveDown />
             </Button>

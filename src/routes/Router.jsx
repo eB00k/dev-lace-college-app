@@ -10,6 +10,7 @@ import BaseLayout from "../components/layouts/BaseLayout";
 import AboutPage from "../pages/about/AboutPage";
 import Academics from "../pages/academics/Academics";
 import Spinner from "../components/spinner/Spinner";
+import ThankYou from "../pages/thank-you/ThankYou";
 
 // Initialize Google Analytics
 ReactGA.initialize("G-CGRMDSBGSZ");
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/academics",
         element: <Academics />,
+      },
+      {
+        path: "/thank-you",
+        element: <ThankYou />,
       },
     ],
   },

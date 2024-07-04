@@ -30,7 +30,8 @@ const AboutSection = () => {
           <p className="text-base my-2">{t("home.aboutSection.description")}</p>
           <CustomList list={listForMission} className="my-4" />
           <Link to={"/about"} preventScrollReset={true}>
-            <Button className="uppercase bg-main text-white">
+            <Button className="uppercase bg-main text-white relative">
+              <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
               {t("home.aboutSection.learnMoreButton")}
             </Button>
           </Link>

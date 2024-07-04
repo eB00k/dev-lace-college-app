@@ -285,5 +285,10 @@
         "description": "Being smaller and more localized, our LA College of Engineering encourages students to engage with the community through service learning, local/global contests, hackathons, projects, and collaborations, enhancing both personal and professional development. Studying at a College of Engineering can provide a strong foundation in engineering principles while offering numerous advantages that cater to diverse needs and goals."
       }
     ]
+  },
+  "thankYou": {
+    "title": "Thank you for your submission!",
+    "description": "We will contact you soon.",
+    "btnText": "Home"
   }
 }

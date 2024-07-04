@@ -26,12 +26,6 @@ function Home() {
       <section id="gallery">
         <Gallery />
       </section>
-      <section id="campus">
-        <Campus />
-      </section>
-      {/* <section id="testemonials">
-        <Testemonials />
-      </section> */}
       <section id="faq">
         <FAQ />
       </section>

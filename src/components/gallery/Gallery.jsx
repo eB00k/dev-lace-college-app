@@ -52,9 +52,6 @@ const Gallery = () => {
           />
         ))}
       </div>
-      <p className="text-base pt-20 text-center px-4 sm:px-6 md:px-8">
-        {t("home.gallerySection.description")}
-      </p>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Router from "./routes/Router.jsx";
 import "./i18n.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Router />
-  </React.StrictMode>
+  //<React.StrictMode>
+  <Router />
+  //</React.StrictMode>
 );

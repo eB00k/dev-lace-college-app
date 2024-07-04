@@ -60,6 +60,12 @@
   }
 }
 
+@layer utilities {
+   .btn-shimmer {
+    @apply inline-flex justify-center whitespace-nowrap rounded-lg px-3.5 py-2.5 text-sm font-medium text-slate-200 dark:text-slate-800 bg-gradient-to-r from-slate-800 to-slate-700 dark:from-slate-200 dark:to-slate-100 shadow focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative overflow-hidden animate-shimmer;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
