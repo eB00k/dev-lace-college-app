@@ -126,15 +126,28 @@
       "title": "Frequently Asked Questions (FAQ)",
       "programsOffered": {
         "title": "What programs are offered at Light Academy?",
-        "content": "• Software Engineering\n• Cyber Security\n• IT & Entrepreneurship\n• STEM Pedagogy"
+        "content": [
+          "Software Engineering",
+          "Cyber Security",
+          "IT & Entrepreneurship",
+          "STEM Pedagogy"
+        ]
       },
       "careerOpportunities": {
         "title": "What career opportunities are available after graduation?",
-        "content": "• Software Developer\n• Cyber Security Analyst\n• IT Project Manager\n• STEM Educator"
+        "content": [
+          "Software Developer",
+          "Cyber Security Analyst",
+          "IT Project Manager",
+          "STEM Educator"
+        ]
       },
       "studyDuration": {
         "title": "What is the duration of the programs?",
-        "content": "• 2 years and 10 months for graduates of 9th grade\n• 1 year and 10 months for graduates of 11th grade"
+        "content": [
+          "2 years and 10 months for graduates of 9th grade",
+          "1 year and 10 months for graduates of 11th grade"
+        ]
       },
       "internationalJobOpportunities": {
         "title": "Are there opportunities for employment abroad?",
@@ -142,7 +155,10 @@
       },
       "admissionRequirements": {
         "title": "What are the admission requirements?",
-        "content": "• Submit the necessary documents and pay 30%\n• No entrance exams required"
+        "content": [
+          "Submit the necessary documents and pay 30%",
+          "No entrance exams required"
+        ]
       }
     },
     "admission": {
