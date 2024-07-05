@@ -124,42 +124,56 @@
     },
     "faq": {
       "title": "Frequently Asked Questions (FAQ)",
-      "programsOffered": {
-        "title": "What programs are offered at Light Academy?",
-        "content": [
-          "Software Engineering",
-          "Cyber Security",
-          "IT & Entrepreneurship",
-          "STEM Pedagogy"
-        ]
-      },
-      "careerOpportunities": {
-        "title": "What career opportunities are available after graduation?",
-        "content": [
-          "Software Developer",
-          "Cyber Security Analyst",
-          "IT Project Manager",
-          "STEM Educator"
-        ]
-      },
-      "studyDuration": {
-        "title": "What is the duration of the programs?",
-        "content": [
-          "2 years and 10 months for graduates of 9th grade",
-          "1 year and 10 months for graduates of 11th grade"
-        ]
-      },
-      "internationalJobOpportunities": {
-        "title": "Are there opportunities for employment abroad?",
-        "content": "Yes, there are job opportunities in Japan and Germany."
-      },
-      "admissionRequirements": {
-        "title": "What are the admission requirements?",
-        "content": [
-          "Submit the necessary documents and pay 30%",
-          "No entrance exams required"
-        ]
-      }
+      "questions": [
+        {
+          "question": "How long does the program last for students who have completed 9th grade?",
+          "answer": "2 years and 10 months"
+        },
+        {
+          "question": "What is the language of instruction?",
+          "answer": "The language of instruction is English. The 1st-year program for 10th and 11th grades will be conducted in the language in which the school instruction was conducted. The 2nd and 3rd-year instruction will be entirely in English."
+        },
+        {
+          "question": "Can I know the tuition fees?",
+          "answer": "The initial payment is 30% of the total fee. Detailed information on the cost is available upon contacting the admissions office. Please call: 0501 990 550, 0755 990 550"
+        },
+        {
+          "question": "Will the contract price change?",
+          "answer": "No, the contract price at the time of enrollment will not change for all 3 years."
+        },
+        {
+          "question": "Can I work with the diploma after graduating from your college?",
+          "answer": "After graduation, you can work with a diploma of secondary technical education, or continue your studies at a university."
+        },
+        {
+          "question": "What are the criteria for placing students abroad, in Japan and Germany?",
+          "answer": "A minimum level of B1 in German or Japanese and an academic performance of over 85 out of 100 are required."
+        },
+        {
+          "question": "What type of diploma will I receive after graduating from the college?",
+          "answer": "After graduation, a diploma of secondary technical education of the Kyrgyz Republic standard will be issued."
+        },
+        {
+          "question": "What is included in the contract?",
+          "answer": "In addition to education, the college provides a new, individual laptop to each admitted student."
+        },
+        {
+          "question": "Does the contract amount include accommodation and meals?",
+          "answer": "No, our education does not include accommodation and meals."
+        },
+        {
+          "question": "What is the contract price if I have my own laptop?",
+          "answer": "The contract is $2200 with your own laptop"
+        },
+        {
+          "question": "My English is not good enough. How can I study at your college?",
+          "answer": "If your English level does not meet our minimum requirement, students can enroll in a preparatory course. If you have only completed the 9th grade, you will study both English and the 10th-11th grade program in the first year."
+        },
+        {
+          "question": "Can I know the class schedule?",
+          "answer": "The class schedule is from 09.00 to 17.00"
+        }
+      ]
     },
     "admission": {
       "title": "Admission",

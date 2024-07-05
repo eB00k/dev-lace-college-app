@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ContuctUsButton from "../../components/contact/ContuctUsButton";
+import ContactForm2 from "../../components/contact/ContactForm2";
 
 const Admission = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Admission = () => {
   );
 
   return (
-    <div className="page-style">
+    <div className="page py-20 pt-24 px-4 text-slate-900">
       <div className="max-w-[860px] mx-auto text-slate-700">
         <div className="mb-6 ">
           <h2 className="page-title">{t("admission.title")}</h2>
@@ -44,17 +45,9 @@ const Admission = () => {
               <div className="w-full h-full bg-mission bg-no-repeat bg-cover bg-center rounded-md"></div>
             </div>
           </div>
-
-          <h3 className="pt-6 page-subtitle">
-            {t("admission.graduationDocuments.title")}:
-          </h3>
-          <p className="page-paragraph">
-            {renderList(
-              t("admission.graduationDocuments.list", { returnObjects: true })
-            )}
-          </p>
         </div>
       </div>
+      <ContactForm2 />
       <ContuctUsButton />
     </div>
   );

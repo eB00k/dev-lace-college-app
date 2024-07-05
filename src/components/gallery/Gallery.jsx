@@ -1,8 +1,8 @@
 import React from "react";
 // import { galleryImages } from "../../config/constants";
 import { twMerge } from "tailwind-merge";
-import SectionTitle from "../title/SectionTitle";
 import { useTranslation } from "react-i18next";
+import SectionTitle from "../title/SectionTitle";
 
 const imageMappings = {
   campus: "bg-gallery-1",

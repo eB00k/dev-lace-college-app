@@ -8,6 +8,7 @@ import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
 import MapAndContactInfo from "../../components/map-info/MapAndContactInfo";
 import ContactForm2 from "../../components/contact/ContactForm2";
 import ContactUsButton from "../../components//contact/ContuctUsButton";
+import Images from "../../components/gallery/Images";
 
 function Home() {
   return (
@@ -23,7 +24,8 @@ function Home() {
         <ReasonsToStudy />
       </section>
       <section id="gallery">
-        <Gallery />
+        {/* <Gallery /> */}
+        <Images />
       </section>
       <section id="faq">
         <FAQ />
