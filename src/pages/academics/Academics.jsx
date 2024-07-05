@@ -1,17 +1,23 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 const programs = [
   {
     key: "softwareEngineering",
+    id: "program-1",
   },
   {
     key: "cyberSecurity",
+    id: "program-2",
   },
   {
     key: "itEntrepreneurship",
+    id: "program-3",
   },
   {
     key: "stemPedagogy",
+    id: "program-4",
   },
 ];
 
@@ -21,13 +27,28 @@ const reasons = Array.from({ length: 10 }, (_, i) => ({
 
 function Academics() {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        const yOffset = -80;
+        element.scrollIntoView({ behavior: "smooth" });
+        const y =
+          element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="page-style">
       <div className="container mx-auto text-slate-700">
         <h2 className="page-title">{t("academics.programs")}</h2>
         {programs.map((program) => (
-          <div key={program.key} className="mb-6">
+          <div id={program.id} key={program.key} className="mb-6">
             <h3 className="page-subtitle">
               {t(`academics.${program.key}.name`)}
             </h3>

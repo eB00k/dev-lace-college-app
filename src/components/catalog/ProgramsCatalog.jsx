@@ -12,21 +12,25 @@ function ProgramsCatalog() {
       name: t("home.programsSection.programs.0.name"),
       description: t("home.programsSection.programs.0.description"),
       learnMore: t("home.programsSection.programs.0.learnMore"),
+      link: "/academics#program-1",
     },
     {
       name: t("home.programsSection.programs.1.name"),
       description: t("home.programsSection.programs.1.description"),
       learnMore: t("home.programsSection.programs.1.learnMore"),
+      link: "/academics#program-2",
     },
     {
       name: t("home.programsSection.programs.2.name"),
       description: t("home.programsSection.programs.2.description"),
       learnMore: t("home.programsSection.programs.2.learnMore"),
+      link: "/academics#program-3",
     },
     {
       name: t("home.programsSection.programs.3.name"),
       description: t("home.programsSection.programs.3.description"),
       learnMore: t("home.programsSection.programs.3.learnMore"),
+      link: "/academics#program-4",
     },
   ];
   return (
@@ -43,7 +47,7 @@ function ProgramsCatalog() {
             </div>
             <h3 className="mb-4 font-medium text-lg">{program.name}</h3>
             <p className="text-sm text-slate-700">{program.description}</p>
-            <Link to="/academics" className=" mt-2 block underline text-sm">
+            <Link to={program.link} className="mt-2 block underline text-sm">
               {program.learnMore}
             </Link>
           </div>
