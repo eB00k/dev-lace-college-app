@@ -13,7 +13,7 @@ import Spinner from "../components/spinner/Spinner";
 import ThankYou from "../pages/thank-you/ThankYou";
 
 // Initialize Google Analytics
-ReactGA.initialize("G-CGRMDSBGSZ");
+ReactGA.initialize("G-2M2GPPXSPW");
 
 // Define the router configuration
 const router = createBrowserRouter([
