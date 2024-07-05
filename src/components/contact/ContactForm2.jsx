@@ -155,6 +155,7 @@ export function Form() {
             sitekey={import.meta.env.VITE_APP_RECAPTCHA_SITE_KEY}
             size="invisible"
             onChange={onCaptchaChange}
+            className="hide opacity-0"
           />
         </div>
         <div className="p-2 w-full">

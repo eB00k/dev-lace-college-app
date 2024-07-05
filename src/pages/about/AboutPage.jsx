@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ContactForm2 from "../../components/contact/ContactForm2";
+import ContactUsButton from "../../components/contact/ContuctUsButton";
 
 function AboutPage() {
   const { t } = useTranslation();
@@ -20,8 +21,8 @@ function AboutPage() {
         <h3 className="page-subtitle">{t("about.vision")}</h3>
         <p className="page-paragraph">{t("about.visionDescription")}</p>
       </div>
-
       <ContactForm2 />
+      <ContactUsButton />
     </div>
   );
 }

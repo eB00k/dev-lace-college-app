@@ -60,7 +60,7 @@
       "data": [
         {
           "title": "Affordable Education in English",
-          "description": "Our College of Engineering offers lower tuition rates compared to four-year universities, making education more accessible and reducing student debt. Tuition rates are 4,000 USD: Access to the licensed tailored curriculums, courses & specialization tracks of Coursera.org and personal laptop which student gets upon admission."
+          "description": "Our College of Engineering offers lower tuition rates compared to four-year universities, making education more accessible and reducing student debt. Access to the licensed tailored curriculums, courses & specialization tracks of Coursera.org and personal laptop which student gets upon admission."
         },
         {
           "title": "Small Class Sizes",
@@ -122,6 +122,60 @@
         }
       ]
     },
+    "faq": {
+      "title": "Frequently Asked Questions (FAQ)",
+      "programsOffered": {
+        "title": "What programs are offered at Light Academy?",
+        "content": "• Software Engineering\n• Cyber Security\n• IT & Entrepreneurship\n• STEM Pedagogy"
+      },
+      "careerOpportunities": {
+        "title": "What career opportunities are available after graduation?",
+        "content": "• Software Developer\n• Cyber Security Analyst\n• IT Project Manager\n• STEM Educator"
+      },
+      "studyDuration": {
+        "title": "What is the duration of the programs?",
+        "content": "• 2 years and 10 months for graduates of 9th grade\n• 1 year and 10 months for graduates of 11th grade"
+      },
+      "internationalJobOpportunities": {
+        "title": "Are there opportunities for employment abroad?",
+        "content": "Yes, there are job opportunities in Japan and Germany."
+      },
+      "admissionRequirements": {
+        "title": "What are the admission requirements?",
+        "content": "• Submit the necessary documents and pay 30%\n• No entrance exams required"
+      }
+    },
+    "admission": {
+      "title": "Admission",
+      "requirements": {
+        "title": "Admission Requirements",
+        "description": "To be eligible for admission, you must meet the following criteria:",
+        "list": [
+          "Successful completion of 9th or 11th grade",
+          "Preparation of required documents (diploma, passport, etc.)",
+          "No entrance exams required"
+        ]
+      },
+      "cost": {
+        "title": "Cost of Education",
+        "description": "The initial payment is $1200. For detailed information about the cost, please contact the admissions office."
+      },
+      "documents": {
+        "title": "Documents Required for Admission",
+        "list": [
+          "Copy of passport (or birth certificate)",
+          "Original state-issued certificate of completion of 9th grade",
+          "4 photos (3x4 cm)",
+          "Copies of parents' passports",
+          "Medical certificate (form 086/U)",
+          "Copy of military ID or registration certificate (for males over 18)"
+        ]
+      },
+      "contact": {
+        "title": "Contact Information",
+        "phone": "For more information, please contact us at: 0501 990 550 or 0755 990 550"
+      }
+    },
     "campusSection": {
       "title": "Our Campus"
     },
@@ -139,7 +193,7 @@
       "sendMessage": "Send Message",
       "address": {
         "title": "Address",
-        "content": "7a, 1 Sayakbay Karalaev St, Bishkek"
+        "content": "Саякбая Каралаева, 7а/1 · Сухэ-Батора, 23"
       },
       "hours": {
         "title": "Hours",
@@ -285,6 +339,45 @@
         "description": "Being smaller and more localized, our LA College of Engineering encourages students to engage with the community through service learning, local/global contests, hackathons, projects, and collaborations, enhancing both personal and professional development. Studying at a College of Engineering can provide a strong foundation in engineering principles while offering numerous advantages that cater to diverse needs and goals."
       }
     ]
+  },
+  "admission": {
+    "title": "Admission Information",
+    "requirements": {
+      "title": "Admission Requirements",
+      "description": "To apply for our programs, you need to meet the following requirements:",
+      "list": [
+        "Successful completion of 9th or 11th grade.",
+        "Preparation of necessary documents (certificate, passport, etc.).",
+        "No entrance exams required."
+      ]
+    },
+    "cost": {
+      "title": "Tuition Fees",
+      "description": "Initial fee: $1200. Detailed information about tuition fees is available at the admissions office."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "phone": "Phone numbers: 0501 990 550, 0755 990 550"
+    },
+    "documents": {
+      "title": "Required Documents",
+      "list": [
+        "Copy of passport (or birth certificate).",
+        "Original state-issued certificate of completion of 9th grade.",
+        "Four 3/4 photos.",
+        "Copies of parents' passports.",
+        "Medical certificate 086/U.",
+        "Copy of military registration certificate or military ID (for males over 18)."
+      ]
+    },
+    "graduationDocuments": {
+      "title": "Graduation Documents",
+      "list": [
+        "Diploma of secondary vocational education: The main document confirming the receipt of secondary vocational education in a specific specialty. It can be with honors (red diploma) or without honors (blue diploma), depending on the student's performance.",
+        "Diploma supplement: This document lists all the subjects the student studied and the grades received. The supplement is an integral part of the diploma.",
+        "Certificates: Depending on the training program and additional courses, the student may receive various certificates. These may include certificates for completing advanced training courses or certificates of specific professional skills."
+      ]
+    }
   },
   "thankYou": {
     "title": "Thank you for your submission!",

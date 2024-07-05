@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
-import Modal from "react-modal";
-import BaseModal from "../../components/modal/BaseModal";
-import { Form } from "../../components/contact/ContactForm2";
-
-Modal.setAppElement("#root");
 
 const programs = [
   {
@@ -31,7 +26,6 @@ const reasons = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 function Academics() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
 
@@ -48,14 +42,6 @@ function Academics() {
       }
     }
   }, [location]);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <div className="page-style">
@@ -119,15 +105,6 @@ function Academics() {
           })}
         </div>
       </div>
-
-      {/* <BaseModal
-        label="Example Modal"
-        openModal={isModalOpen}
-        closeModal={closeModal}
-        className="rounded-xl"
-      >
-        <Form/>
-      </BaseModal> */}
     </div>
   );
 }

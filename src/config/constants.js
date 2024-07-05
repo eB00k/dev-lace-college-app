@@ -3,7 +3,7 @@ export const navLinks = [
   { to: "/", label: "navbar.home" },
   { to: "/about", label: "navbar.about" },
   { to: "/academics", label: "navbar.academics" },
-  { path: "#admissions", label: "navbar.admissions" },
+  { to: "/admissions", label: "navbar.admissions" },
 ];
 
 export const companyLinks = [
@@ -19,7 +19,7 @@ export const helpfulLinks = [
 
 export const contactLinks = [
   {
-    href: "tel:+996501990550",
+    href: "https://t.me/+996501990550",
     label: "+996 501 99 05 50",
     labelStart: "Phone",
   },
@@ -29,8 +29,8 @@ export const contactLinks = [
     labelStart: "Email",
   },
   {
-    href: "https://2gis.kg/bishkek/firm/70000001089690237/74.630404%2C42.829258?m=74.630042%2C42.829236%2F19.87",
-    label: "7а, 1 Sayakbay Karalaev St, Bishkek",
+    href: "https://2gis.kg/bishkek/inside/70030076373364328/firm/70000001089690237",
+    label: "Саякбая Каралаева, 7а/1 · Сухэ-Батора, 23 ",
     labelStart: "Address",
   },
 ];

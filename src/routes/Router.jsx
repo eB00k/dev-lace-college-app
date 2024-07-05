@@ -9,6 +9,7 @@ import Home from "../pages/home/Home";
 import BaseLayout from "../components/layouts/BaseLayout";
 import AboutPage from "../pages/about/AboutPage";
 import Academics from "../pages/academics/Academics";
+import Admission from "../pages/admission/Admission";
 import Spinner from "../components/spinner/Spinner";
 import ThankYou from "../pages/thank-you/ThankYou";
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/academics",
         element: <Academics />,
+      },
+      {
+        path: "/admissions",
+        element: <Admission />,
       },
       {
         path: "/thank-you",

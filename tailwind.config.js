@@ -40,8 +40,14 @@ export default {
           "25%": { backgroundPosition: "-100% 0" },
           "100%": { backgroundPosition: "-100% 0" },
         },
+        ring: {
+          "0%, 35%": { transform: "rotate(0)" },
+          "10%, 20%, 30%": { transform: "rotate(-15deg)" },
+          "15%, 25%": { transform: "rotate(15deg)" },
+        },
       },
       animation: {
+        ring: "ring 3s ease-out infinite",
         pulseRing: "pulseRing 1.5s cubic-bezier(0.7, 0, 0.3, 1) infinite",
         shimmer: "shimmer 3.5s linear infinite",
       },

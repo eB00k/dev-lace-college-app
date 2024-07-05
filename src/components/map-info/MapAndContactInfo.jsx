@@ -26,7 +26,9 @@ function MapAndContactInfo() {
                   {t("home.contactSection.address.title")}
                 </h3>
                 <p className="mt-1 text-slate-600">
-                  {t("home.contactSection.address.content")}
+                  <a href="https://2gis.kg/bishkek/inside/70030076373364328/firm/70000001089690237">
+                    {t("home.contactSection.address.content")}
+                  </a>
                 </p>
               </div>
               <div className="border-t border-slate-200 px-6 py-4">

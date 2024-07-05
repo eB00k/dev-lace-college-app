@@ -7,6 +7,7 @@ import FAQ from "../../components/faq/FAQ";
 import ReasonsToStudy from "../../components/reasons/ReasonsToStudy";
 import MapAndContactInfo from "../../components/map-info/MapAndContactInfo";
 import ContactForm2 from "../../components/contact/ContactForm2";
+import ContactUsButton from "../../components//contact/ContuctUsButton";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
       <section id="contact">
         <ContactForm2 />
         <MapAndContactInfo />
+        <ContactUsButton link={"#contact"} />
       </section>
     </>
   );
