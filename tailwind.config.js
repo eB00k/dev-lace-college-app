@@ -17,12 +17,7 @@ export default {
           'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/students_5.jpeg")',
         "h-gradient":
           "linear-gradient(180deg, rgba(255,255,255,0) 65%, #F6C90E 65%)",
-        campus: "url('./assets/college_outside_1.jpeg')",
-        mission: "url('./assets/students_6.jpeg')",
-        "gallery-1": "url('./assets/students_1.jpeg')",
-        "gallery-2": "url('./assets/students_2.jpeg')",
-        "gallery-3": "url('./assets/students_3.jpeg')",
-        "gallery-4": "url('./assets/class_students_3.jpeg')",
+        mission: "url('./assets/students_6.webp')",
       },
       backgroundSize: {
         "full-40": "100% 40%",

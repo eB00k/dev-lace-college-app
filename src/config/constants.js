@@ -7,19 +7,19 @@ export const navLinks = [
 ];
 
 export const companyLinks = [
-  { href: "#about", label: "About L.A.C.E" },
+  { to: "/about", label: "About L.A.C.E" },
   { to: "/academics", label: "Accademics" },
   { to: "/admissions", label: "Admissions" },
 ];
 
 export const helpfulLinks = [
-  { href: "#contact", label: "Contact" },
-  { href: "#faq", label: "FAQs" },
+  { to: "/#contact", label: "Contact" },
+  { to: "/#faq", label: "FAQs" },
 ];
 
 export const contactLinks = [
   {
-    href: "https://t.me/+996501990550",
+    href: "tel:+996501990550",
     label: "+996 501 99 05 50",
     labelStart: "Phone",
   },

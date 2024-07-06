@@ -1,9 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import CustomList from "../list/CustomList";
 import SectionTitle from "../title/SectionTitle";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
   const { t } = useTranslation();

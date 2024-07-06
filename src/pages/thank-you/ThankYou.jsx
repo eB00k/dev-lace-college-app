@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ArrowLeft } from "lucide-react";
 import Button from "../../components/button/Button";
 
 const ThankYou = () => {
@@ -42,21 +43,8 @@ const ThankYou = () => {
             <Link to={"/"}>
               <Button className="relative inline-flex items-center rounded bg-blue-500 text-white focus:outline-none focus:ring">
                 <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mr-2 h-3 w-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 16l-4-4m0 0l4-4m-4 4h18"
-                  />
-                </svg>
-                <span className="text-sm font-medium">
+                <ArrowLeft size={16} />
+                <span className="text-md font-medium">
                   {t("thankYou.btnText")}
                 </span>
               </Button>

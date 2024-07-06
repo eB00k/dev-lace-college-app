@@ -3,6 +3,7 @@ import { footerColumns } from "../../config/constants";
 import Logo from "../header/Logo";
 import logo from "../../assets/la-black-logo.png";
 import { socialMediaIcons } from "../../config/icons";
+import { Link } from "react-router-dom";
 
 // Define social icons data
 export const socialIcons = [
@@ -17,7 +18,7 @@ export const socialIcons = [
     label: "WhatsApp",
   },
   {
-    href: "tg://resolve?domain=996501990550",
+    href: "https://t.me/+996501990550",
     icon: socialMediaIcons.telegram,
     label: "Telegram",
   },
@@ -30,13 +31,23 @@ const FooterColumn = ({ title, links }) => (
     <ul className="mt-6 space-y-4 text-sm">
       {links.map((link, index) => (
         <li key={index}>
-          <a
-            href={link.href}
-            className="text-gray-700 transition hover:opacity-75"
-          >
-            {link.labelStart && <span>{link.labelStart}:</span>}{" "}
-            <span className="block">{link.label}</span>
-          </a>
+          {link.href ? (
+            <a
+              href={link.href}
+              className="text-gray-700 transition hover:opacity-75"
+            >
+              {link.labelStart && <span>{link.labelStart}:</span>}{" "}
+              <span className="block">{link.label}</span>
+            </a>
+          ) : (
+            <Link
+              to={link.to}
+              className="text-gray-700 transition hover:opacity-75"
+            >
+              {link.labelStart && <span>{link.labelStart}:</span>}{" "}
+              <span className="block">{link.label}</span>
+            </Link>
+          )}
         </li>
       ))}
     </ul>

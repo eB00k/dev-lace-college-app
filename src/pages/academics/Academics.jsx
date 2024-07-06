@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import BaseModal from "../../components/modal/BaseModal";
 import { Form } from "../../components/contact/ContactForm2";
 import { ContactLinkButton } from "../../components/reasons/ReasonsToStudy";
+import ContactUsButton from "../../components/contact/ContuctUsButton";
 
 const programs = [
   {
@@ -96,7 +97,10 @@ function Academics() {
             });
 
             return (
-              <div key={index} className="flex flex-col p-4 border rounded-lg">
+              <div
+                key={index}
+                className="relative flex flex-col p-4 border rounded-lg"
+              >
                 <div className="page-subtitle">
                   {t(`academics.${reason.key}.keywords`)}
                 </div>
@@ -124,6 +128,7 @@ function Academics() {
       >
         <Form />
       </BaseModal>
+      <ContactUsButton />
     </div>
   );
 }

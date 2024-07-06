@@ -64,7 +64,7 @@ function MapAndContactInfo() {
                   <article className="mt-1 text-slate-600 flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
                     <div
                       itemScope
-                      itemType="https://schema.org/LocalBusiness"
+                      itemType="https://schema.org/WebPage"
                       className="flex justify-center items-center gap-2"
                     >
                       <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
@@ -76,17 +76,19 @@ function MapAndContactInfo() {
                         </a>
                       </span>
                     </div>
-                    <div className="flex justify-center items-center gap-2">
-                      <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
-                        {socialMediaIcons.telegram}
-                      </span>
-                      <span>+996 501 99 05 50</span>
-                    </div>
+                    <a href="https://t.me/+996501990550">
+                      <div className="flex justify-center items-center gap-2">
+                        <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
+                          {socialMediaIcons.telegram}
+                        </span>
+                        <span>+996 501 99 05 50</span>
+                      </div>
+                    </a>
                   </article>
                   <article className="mt-1 text-slate-600 flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
                     <div
                       itemScope
-                      itemType="https://schema.org/LocalBusiness"
+                      itemType="https://schema.org/WebPage"
                       className="flex justify-center items-center gap-2"
                     >
                       <span className="text-slate-700 w-8 h-8 flex justify-center items-center">
