@@ -249,6 +249,7 @@
   },
   "academics": {
     "programs": "Programs",
+    "modalTitle": "Contact us",
     "btnApplyText": "Apply Now",
     "softwareEngineering": {
       "name": "Software Engineering",

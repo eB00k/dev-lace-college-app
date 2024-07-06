@@ -118,7 +118,7 @@ function Academics() {
         </div>
       </div>
       <BaseModal
-        label={"Contuct Us"}
+        label={t("academics.modalTitle")}
         openModal={isOpenModal}
         closeModal={closeModal}
       >

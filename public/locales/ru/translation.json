@@ -250,6 +250,7 @@
   },
   "academics": {
     "programs": "Программы",
+    "modalTitle": "Связаться с нами",
     "btnApplyText": "Оставить заявку",
     "softwareEngineering": {
       "name": "Программная инженерия",
