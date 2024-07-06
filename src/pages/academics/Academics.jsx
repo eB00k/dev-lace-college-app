@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+import BaseModal from "../../components/modal/BaseModal";
+import { Form } from "../../components/contact/ContactForm2";
+import { ContactLinkButton } from "../../components/reasons/ReasonsToStudy";
 
 const programs = [
   {
@@ -28,6 +31,7 @@ const reasons = Array.from({ length: 10 }, (_, i) => ({
 function Academics() {
   const { t } = useTranslation();
   const location = useLocation();
+  const [isOpenModal, setIsOpenModal] = useState();
 
   useEffect(() => {
     const hash = location.hash;
@@ -42,6 +46,14 @@ function Academics() {
       }
     }
   }, [location]);
+
+  const openModal = () => {
+    setIsOpenModal(true);
+  };
+
+  const closeModal = () => {
+    setIsOpenModal(false);
+  };
 
   return (
     <div className="page-style">
@@ -67,12 +79,12 @@ function Academics() {
                 )
               )}
             </ul>
-            {/* <button
-              onClick={() => openModal(program)}
-              className="mt-2 block underline text-sm text-blue-500"
-            >
-              {t("academics.applyNow")}
-            </button> */}
+            <div className="mb-10">
+              <ContactLinkButton
+                label={t("academics.btnApplyText")}
+                onClick={() => openModal()}
+              />
+            </div>
           </div>
         ))}
 
@@ -105,6 +117,13 @@ function Academics() {
           })}
         </div>
       </div>
+      <BaseModal
+        label={"Contuct Us"}
+        openModal={isOpenModal}
+        closeModal={closeModal}
+      >
+        <Form />
+      </BaseModal>
     </div>
   );
 }

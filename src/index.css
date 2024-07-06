@@ -90,13 +90,12 @@ html {
   background: rgba(74, 62, 89, 0.1);
 }
 
-.grecaptcha-badge {
-  visibility: hidden;
+/* .grecaptcha-badge {
+  /* visibility: hidden;
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
-  overflow: hidden;
-}
+  overflow: hidden; */

@@ -249,6 +249,7 @@
   },
   "academics": {
     "programs": "Programs",
+    "btnApplyText": "Apply Now",
     "softwareEngineering": {
       "name": "Software Engineering",
       "description": "The Software Engineering Program is dedicated to advancing the discipline of software development through comprehensive educational programs, research, and collaboration with industry. Focused on the application of engineering principles to the design, development, and implementation of software, the program offers both theoretical and practical training. Students learn about various software development methodologies, project management, and effective team collaboration, preparing them to tackle complex software challenges in a dynamic technological landscape.",

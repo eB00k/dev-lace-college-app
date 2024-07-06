@@ -114,7 +114,7 @@ export function Form() {
     }
   };
   return (
-    <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="w-full">
       <div className="flex flex-wrap -m-2 overflow-hidden">
         <div className="p-2 w-1/2">
           <Input
@@ -149,7 +149,7 @@ export function Form() {
             errors={errors}
           />
         </div>
-        <div className="p-2 w-full">
+        <div className="p-2 w-full hidden">
           <ReCAPTCHA
             ref={recaptchaRef}
             sitekey={import.meta.env.VITE_APP_RECAPTCHA_SITE_KEY}

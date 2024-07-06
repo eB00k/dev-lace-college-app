@@ -19,7 +19,7 @@ const ThankYou = () => {
   }, [navigate]);
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center text-center">
       {formSubmitted ? (
         <div>
           <div className="flex flex-col items-center space-y-2">
@@ -40,7 +40,8 @@ const ThankYou = () => {
             <h1 className="text-4xl font-bold">{t("thankYou.title")}</h1>
             <p>{t("thankYou.description")}</p>
             <Link to={"/"}>
-              <Button className="inline-flex items-center rounded bg-blue-500 text-white focus:outline-none focus:ring">
+              <Button className="relative inline-flex items-center rounded bg-blue-500 text-white focus:outline-none focus:ring">
+                <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="mr-2 h-3 w-3"

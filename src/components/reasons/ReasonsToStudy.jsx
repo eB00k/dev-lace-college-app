@@ -5,19 +5,6 @@ import Button from "../button/Button";
 import { MoveDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// const layoutClasses = [
-//   "row-start-2 md:col-start-2 md:row-start-1",
-//   "row-start-3 md:col-start-1 md:row-start-2 md:col-span-2 lg:col-start-3 lg:row-start-1 lg:col-span-1",
-//   "row-start-4 md:row-start-3 md:col-start-1 lg:col-span-2 lg:row-start-2",
-//   "row-start-5 md:col-start-2 md:row-start-3 lg:col-start-3 lg:row-start-2",
-//   "row-start-6 md:row-start-4 lg:row-start-3",
-//   "row-start-7 md:row-start-4 lg:row-start-3",
-//   "row-start-8 md:row-start-5 md:col-span-2 lg:col-span-1 lg:row-start-3",
-//   "row-start-9 md:row-start-6 lg:row-start-4",
-//   "row-start-10 md:row-start-6 lg:col-span-2 lg:row-start-4",
-//   "row-start-11 md:row-start-7 lg:row-start-5",
-// ];
-
 const layoutClasses = [
   "row-start-1 md:col-start-2 md:row-start-1",
   "row-start-2 md:col-start-1 md:row-start-2 md:col-span-2 lg:col-start-3 lg:row-start-1 lg:col-span-1",
@@ -31,16 +18,16 @@ const layoutClasses = [
   "row-start-10 md:row-start-7 lg:row-start-5",
 ];
 
-export const ContactLinkButton = () => {
-  const { t } = useTranslation();
+export const ContactLinkButton = ({ label = "", icon, ...props }) => {
   return (
-    <a href={t("home.reasonsSection.cta.buttonLink")}>
-      <Button className="relative bg-blue-500 transition-colors text-white flex text-base">
-        <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
-        <span>{t("home.reasonsSection.cta.buttonText")}</span>
-        <MoveDown />
-      </Button>
-    </a>
+    <Button
+      className="relative bg-blue-500 transition-colors text-white flex text-base"
+      {...props}
+    >
+      <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
+      <span>{label}</span>
+      {icon && icon}
+    </Button>
   );
 };
 
@@ -86,7 +73,12 @@ function ReasonsToStudy() {
           <p className="mb-8 text-base text-center">
             {t("home.reasonsSection.cta.description")}
           </p>
-          <ContactLinkButton />
+          <a href={t("home.reasonsSection.cta.buttonLink")}>
+            <ContactLinkButton
+              label={t("home.reasonsSection.cta.buttonText")}
+              icon={<MoveDown />}
+            />
+          </a>
         </div>
       </div>
     </div>
