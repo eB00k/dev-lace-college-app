@@ -41,7 +41,8 @@ const Admission = () => {
                 )}
               </p>
             </div>
-            <div className=" w-full max-w-[400px] h-96 p-1.5 bg-white shadow-md rounded-md">
+
+            <div className="w-full max-w-[400px] h-96 p-1.5 bg-white shadow-md rounded-md self-center md:self-start lg:self-center">
               <div className="w-full h-full bg-mission bg-no-repeat bg-cover bg-center rounded-md"></div>
             </div>
           </div>
