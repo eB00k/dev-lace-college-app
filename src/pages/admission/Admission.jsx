@@ -25,21 +25,21 @@ const Admission = () => {
               <h3 className="page-subtitle">
                 {t("admission.requirements.title")}:
               </h3>
-              <p className="page-paragraph">
+              <article className="page-paragraph">
                 {t("admission.requirements.description")}
                 {renderList(
                   t("admission.requirements.list", { returnObjects: true })
                 )}
-              </p>
+              </article>
 
               <h3 className="pt-6 page-subtitle">
                 {t("admission.documents.title")}:
               </h3>
-              <p className="page-paragraph">
+              <article className="page-paragraph">
                 {renderList(
                   t("admission.documents.list", { returnObjects: true })
                 )}
-              </p>
+              </article>
             </div>
 
             <div className="w-full max-w-[400px] h-96 p-1.5 bg-white shadow-md rounded-md self-center md:self-start lg:self-center">
