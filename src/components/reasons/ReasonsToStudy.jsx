@@ -18,14 +18,15 @@ const layoutClasses = [
   "row-start-10 md:row-start-7 lg:row-start-5",
 ];
 
-export const ContactLinkButton = ({ label = "", icon, ...props }) => {
+export const ContactLinkButton = ({ children, label = "", icon, ...props }) => {
   return (
     <Button
       className="relative bg-blue-500 transition-colors text-white flex text-base"
       {...props}
     >
       <span className="absolute inset-0 rounded-[inherit] shimmer-gradient bg-[length:250%_250%,100%_100%] bg-[position:200%_0,0_0] bg-no-repeat transition-all animate-shimmer"></span>
-      <span>{label}</span>
+      {label && <span>{label}</span>}
+      {children && <span>{children}</span>}
       {icon && icon}
     </Button>
   );

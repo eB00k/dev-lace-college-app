@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import BaseModal from "../../components/modal/BaseModal";
-import { Form } from "../../components/contact/ContactForm2";
 import { ContactLinkButton } from "../../components/reasons/ReasonsToStudy";
-import ContactUsButton from "../../components/contact/ContuctUsButton";
+import ContactUsButton from "../../components/contact/CallButton";
+import { FormTelegram } from "../../components/contact/FormTelegram";
 
 const programs = [
   {
@@ -102,6 +102,9 @@ function Academics() {
                 className="relative flex flex-col p-4 border rounded-lg"
               >
                 <div className="page-subtitle">
+                  <span className="text-slate-200 text-6xl absolute -z-10 top-2">
+                    {index + 1}
+                  </span>{" "}
                   {t(`academics.${reason.key}.keywords`)}
                 </div>
                 {typeof reasonDescription === "string" ? (
@@ -126,7 +129,7 @@ function Academics() {
         openModal={isOpenModal}
         closeModal={closeModal}
       >
-        <Form />
+        <FormTelegram />
       </BaseModal>
       <ContactUsButton />
     </div>

@@ -17,7 +17,7 @@
     "aboutSection": {
       "title": "About Us",
       "description": "Light Academy College of Engineering (L.A.C.E.) is an institution dedicated to advancing knowledge and innovation in the fields of engineering and technology. Located in the heart of a vibrant urban center, L.A.C.E. offers a dynamic learning environment that combines modern facilities, research, and a commitment to sustainability and environmental stewardship.",
-      "learnMoreButton": "Learn more",
+      "learnMoreButton": "Discover L.A.C.E.",
       "listItems": {
         "history": "History",
         "missionAndVision": "Mission and Vision",
@@ -209,10 +209,11 @@
     "campusSection": {
       "title": "Our Campus"
     },
-    "questionsSection": {
-      "title": "Frequently asked questions"
-    },
     "contactSection": {
+      "form": {
+        "success": "The message was successfully sent!",
+        "error": "Something went wrong!"
+      },
       "sectionTitle": "Contact Us",
       "description": "Feel free to contact us? Submit your message here and we will get back to you as soon as possible.",
       "name": "Name",
@@ -413,5 +414,10 @@
     "title": "Thank you for your submission!",
     "description": "We will contact you soon.",
     "btnText": "Home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "Incorrectly entered web address or the page does not exist",
+    "goBackBtn": "Go Back Home"
   }
 }

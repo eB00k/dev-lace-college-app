@@ -24,8 +24,8 @@ export const contactLinks = [
     labelStart: "Phone",
   },
   {
-    href: "mailto:lightacademy.college@gmail.com",
-    label: "lightacademy.college@gmail.com",
+    href: "mailto:lightacademycollege@gmail.com",
+    label: "lightacademycollege@gmail.com",
     labelStart: "Email",
   },
   {
@@ -45,23 +45,4 @@ export const listForMission = [
   { text: "History" },
   { text: "Mission and Vision" },
   { text: "Educational programs" },
-];
-
-export const galleryImages = [
-  {
-    bgImage: "bg-gallery-1",
-    title: "Campus",
-  },
-  {
-    bgImage: "bg-gallery-2",
-    title: "Students",
-  },
-  {
-    bgImage: "bg-gallery-3",
-    title: "Sport",
-  },
-  {
-    bgImage: "bg-gallery-4",
-    title: "Library",
-  },
 ];

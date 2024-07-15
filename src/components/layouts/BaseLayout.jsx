@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { Toaster } from "sonner";
 import Header from "../header/Header";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../footer/Footer";
+import CallButton from "../contact/CallButton";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,6 +24,8 @@ function BaseLayout() {
       <ScrollToTop />
       <Outlet />
       <Footer />
+      <CallButton />
+      <Toaster richColors={true} />
     </>
   );
 }

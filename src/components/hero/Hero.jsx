@@ -19,11 +19,11 @@ function HighlightedText({ children, className = "" }) {
 function Hero() {
   const { t } = useTranslation();
   return (
-    <div className="page h-screen max-h-[1200px] bg-slate-800 bg-hero-gradient bg-no-repeat bg-cover bg-center w-full flex items-center justify-center px-6">
+    <div className="page h-screen max-h-[1200px] bg-slate-800 bg-hero-gradient bg-no-repeat bg-cover bg-bottom w-full flex items-center justify-center px-6">
       <div className="text-center text-white">
         <div className="max-w-[800px]">
           <h1 className="text-3xl md:text-5xl font-bold max-w-[740px]">
-            <span className="block">{t("home.heroSection.welcome")}</span>
+            <span className="block ">{t("home.heroSection.welcome")}</span>
             <HighlightedText>{t("home.heroSection.title")}</HighlightedText>
           </h1>
           <p className="my-6 text-base">{t("home.heroSection.description")}</p>

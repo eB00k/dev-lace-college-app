@@ -12,6 +12,8 @@ import Academics from "../pages/academics/Academics";
 import Admission from "../pages/admission/Admission";
 import Spinner from "../components/spinner/Spinner";
 import ThankYou from "../pages/thank-you/ThankYou";
+import CareerTestPage from "../pages/careertest/CareerTest";
+import NotFound from "../pages/not-found/NotFound";
 
 // Initialize Google Analytics
 ReactGA.initialize("G-2M2GPPXSPW");
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
         element: <Academics />,
       },
       {
+        path: "/career-test",
+        element: <CareerTestPage />,
+      },
+      {
         path: "/admissions",
         element: <Admission />,
       },
@@ -41,11 +47,15 @@ const router = createBrowserRouter([
         path: "/thank-you",
         element: <ThankYou />,
       },
+      // {
+      //   path: "*",
+      //   element: <NotFound />,
+      // },
     ],
   },
   {
     path: "*",
-    element: <div>Not Found</div>,
+    element: <NotFound />,
   },
 ]);
 

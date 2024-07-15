@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import ContuctUsButton from "../../components/contact/ContuctUsButton";
-import ContactForm2 from "../../components/contact/ContactForm2";
+import ContactTelegram from "../../components/contact/ContactTelegram";
 
 const Admission = () => {
   const { t } = useTranslation();
@@ -48,8 +47,7 @@ const Admission = () => {
           </div>
         </div>
       </div>
-      <ContactForm2 />
-      <ContuctUsButton />
+      <ContactTelegram/>
     </div>
   );
 };

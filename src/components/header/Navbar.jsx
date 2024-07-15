@@ -66,7 +66,7 @@ function Navbar() {
     <nav className="w-full flex item-center justify-between p-3 lg:px-12">
       <Logo logoSrc={logo} />
       <DesktopNav />
-      <div className="hidden lg:flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center gap-2">
         <LanguageSelecter />
       </div>
       <MobileNavToggle />

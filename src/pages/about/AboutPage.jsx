@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ContactForm2 from "../../components/contact/ContactForm2";
-import ContactUsButton from "../../components/contact/ContuctUsButton";
+import ContactUsButton from "../../components/contact/CallButton";
 
 function AboutPage() {
   const { t } = useTranslation();
