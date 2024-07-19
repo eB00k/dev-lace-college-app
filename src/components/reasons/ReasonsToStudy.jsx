@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import Button from "../button/Button";
 import { MoveDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import WhatsappButton from "../button/WhatsappButton";
 
 const layoutClasses = [
   "row-start-1 md:col-start-2 md:row-start-1",
@@ -64,6 +65,9 @@ function ReasonsToStudy() {
             <div className="flex flex-col justify-center items-center gap-3 p-6 text-center max-w-[600px]">
               <h3 className="font-bold text-lg">{item.title}</h3>
               <p className="text-sm">{item.description}</p>
+              <div className="sm:hidden">
+                <WhatsappButton>{item.btnText}</WhatsappButton>
+              </div>
             </div>
           </div>
         ))}

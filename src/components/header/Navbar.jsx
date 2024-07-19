@@ -8,6 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import LanguageSelecter from "../langage-selector/LanguageSelecter";
 import { useTranslation } from "react-i18next";
+import WhatsappButton from "../button/WhatsappButton";
 
 /* Mobile Toggle component */
 const MobileNavToggle = () => {
@@ -62,11 +63,17 @@ const DesktopNav = () => {
 };
 
 function Navbar() {
+  const { t } = useTranslation();
   return (
     <nav className="w-full flex item-center justify-between p-3 lg:px-12">
       <Logo logoSrc={logo} />
       <DesktopNav />
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex items-center lg:hidden">
+        <WhatsappButton withAnimation={true}>
+          {t("navbar.btnText")}
+        </WhatsappButton>
+      </div>
+      <div className="hidden lg:flex justify-end items-center gap-2">
         <LanguageSelecter />
       </div>
       <MobileNavToggle />

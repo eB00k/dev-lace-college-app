@@ -43,6 +43,7 @@ export default {
       },
       animation: {
         ring: "ring 3s ease-out infinite",
+        "pulse-shadow": "pulse-shadow 2s infinite",
         pulseRing: "pulseRing 1.5s cubic-bezier(0.7, 0, 0.3, 1) infinite",
         shimmer: "shimmer 3.5s linear infinite",
       },

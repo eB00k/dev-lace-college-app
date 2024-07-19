@@ -4,7 +4,8 @@
     "about": "About Us",
     "academics": "Academics",
     "admissions": "Admissions",
-    "news": "News + Events"
+    "news": "News + Events",
+    "btnText": "Get details"
   },
   "home": {
     "heroSection": {
@@ -60,43 +61,53 @@
       "data": [
         {
           "title": "Affordable Education in English",
-          "description": "Our College of Engineering offers lower tuition rates compared to four-year universities, making education more accessible and reducing student debt. Access to the licensed tailored curriculums, courses & specialization tracks of Coursera.org and personal laptop which student gets upon admission."
+          "description": "Our College of Engineering offers lower tuition rates compared to four-year universities, making education more accessible and reducing student debt. Access to the licensed tailored curriculums, courses & specialization tracks of Coursera.org and personal laptop which student gets upon admission.",
+          "btnText": "Learn More"
         },
         {
           "title": "Small Class Sizes",
-          "description": "Smaller class sizes at our college allow for more personalized attention from instructors, fostering a better learning environment and stronger student-teacher relationships. 40 students per cohort."
+          "description": "Smaller class sizes at our college allow for more personalized attention from instructors, fostering a better learning environment and stronger student-teacher relationships. 40 students per cohort.",
+          "btnText": "Schedule a Tour"
         },
         {
           "title": "Focused Programs",
-          "description": "Our College of Engineering offers focused, career-oriented programs that are designed to meet the needs of the local and global job market, ensuring that students gain relevant skills for immediate employment. Our College of Engineering offers four programs: Software Engineering, Cyber Security, IT & Entrepreneurship, STEAM Pedagogy."
+          "description": "Our College of Engineering offers focused, career-oriented programs that are designed to meet the needs of the local and global job market, ensuring that students gain relevant skills for immediate employment. Our College of Engineering offers four programs: Software Engineering, Cyber Security, IT & Entrepreneurship, STEAM Pedagogy.",
+          "btnText": "Check Requirements"
         },
         {
           "title": "Hands-On Learning",
-          "description": "College of Engineering emphasizes practical, hands-on learning experiences in their engineering programs, providing students with valuable real-world skills. Each curriculum supports multiple tracks of specialization."
+          "description": "College of Engineering emphasizes practical, hands-on learning experiences in their engineering programs, providing students with valuable real-world skills. Each curriculum supports multiple tracks of specialization.",
+          "btnText": "Contact Us"
         },
         {
           "title": "Flexible Scheduling",
-          "description": "With options for part-time, self-study session and online classes, our college offers flexible scheduling to accommodate working students or those with other commitments."
+          "description": "With options for part-time, self-study session and online classes, our college offers flexible scheduling to accommodate working students or those with other commitments.",
+          "btnText": "Apply Now"
         },
         {
           "title": "Transfer Opportunities",
-          "description": "Our college has articulation agreements with four-year universities, making it easier for students to transfer credits and continue their education at a bachelor’s level."
+          "description": "Our college has articulation agreements with four-year universities, making it easier for students to transfer credits and continue their education at a bachelor’s level.",
+          "btnText": "How to Transfer?"
         },
         {
           "title": "Industry Connections",
-          "description": "Our college has strong ties with local and international industries and businesses, providing students with networking opportunities, internships, and job placement assistance."
+          "description": "Our college has strong ties with local and international industries and businesses, providing students with networking opportunities, internships, and job placement assistance.",
+          "btnText": "Guaranteed Employment"
         },
         {
           "title": "Supportive Environment",
-          "description": "Our LA College of Engineering offers a supportive and inclusive environment with resources such as tutoring, counseling, and career services to help students succeed."
+          "description": "Our LA College of Engineering offers a supportive and inclusive environment with resources such as tutoring, counseling, and career services to help students succeed.",
+          "btnText": "Submit Application"
         },
         {
           "title": "Community Engagement",
-          "description": "Being smaller and more localized, our LA College of Engineering encourages students to engage with the community through service learning, local/global contests, hackathons, projects, and collaborations, enhancing both personal and professional development."
+          "description": "Being smaller and more localized, our LA College of Engineering encourages students to engage with the community through service learning, local/global contests, hackathons, projects, and collaborations, enhancing both personal and professional development.",
+          "btnText": "Book a Spot"
         },
         {
           "title": "Diverse Student Body",
-          "description": "The diverse student population at our college enriches the learning experience by bringing a variety of perspectives and backgrounds to the classroom."
+          "description": "The diverse student population at our college enriches the learning experience by bringing a variety of perspectives and backgrounds to the classroom.",
+          "btnText": "Message on WhatsApp"
         }
       ]
     },
