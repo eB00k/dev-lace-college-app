@@ -70,6 +70,7 @@ export function FormTelegram() {
       import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN,
       import.meta.env.VITE_APP_TELEGRAM_CHAT_ID
     );
+    console.log(`https://api.telegram.org/bot${import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN}/sendMessage`);
     try {
       const response = await fetch(
         `https://api.telegram.org/bot${import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN}/sendMessage`,
