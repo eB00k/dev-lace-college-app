@@ -1,57 +1,15 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import Button from "../button/Button";
 import { useTranslation } from "react-i18next";
-
-const Input = ({
-  type = "text",
-  id,
-  name,
-  label,
-  className,
-  required,
-  register,
-  errors,
-  ...props
-}) => {
-  return (
-    <div className="relative">
-      <label htmlFor={id} className="leading-7 text-base text-slate-600">
-        {label}
-      </label>
-      {type === "textarea" ? (
-        <textarea
-          id={id}
-          name={name}
-          className={`w-full bg-slate-100 bg-opacity-50 rounded border border-slate-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-slate-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out ${className}`}
-          required={required}
-          {...register(name, { required: `${label} is required` })}
-          {...props}
-        ></textarea>
-      ) : (
-        <input
-          type={type}
-          id={id}
-          name={name}
-          className={`w-full bg-slate-100 bg-opacity-50 rounded border border-slate-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-slate-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
-          required={required}
-          {...register(name, { required: `${label} is required` })}
-          {...props}
-        />
-      )}
-      {errors[name] && (
-        <span className="text-red-500 text-sm">{errors[name].message}</span>
-      )}
-    </div>
-  );
-};
 
 export function FormTelegram() {
   const { t } = useTranslation();
   const prefix = "home.contactSection";
   const navigate = useNavigate();
+  const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -61,18 +19,32 @@ export function FormTelegram() {
     clearErrors,
   } = useForm();
   const form = useRef();
+  const [utmParams, setUtmParams] = useState({});
+
+  useEffect(() => {
+    const urlSearchParams = new URLSearchParams(location.search);
+    const utm = {};
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term"].forEach(
+      (param) => {
+        utm[param] = urlSearchParams.get(param) || "";
+      }
+    );
+    setUtmParams(utm);
+  }, []);
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
+    const newData = { ...data, ...utmParams };
+
+    const formData = new FormData();
+    Object.entries(newData).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
 
     const message = `New contact form submission:\nName: ${data.name}\nPhone: ${data.phone}\nMessage: ${data.message}`;
-    console.log(
-      import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN,
-      import.meta.env.VITE_APP_TELEGRAM_CHAT_ID
-    );
-    console.log(`https://api.telegram.org/bot${import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN}/sendMessage`);
+
     try {
-      const response = await fetch(
+      const telegramResponse = await fetch(
         `https://api.telegram.org/bot${import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN}/sendMessage`,
         {
           method: "POST",
@@ -86,9 +58,21 @@ export function FormTelegram() {
         }
       );
 
-      if (!response.ok) {
+      if (!telegramResponse.ok) {
         throw new Error("Failed to send message to Telegram.");
       }
+
+      // Send to Google Sheets
+      const sheetResponse = await fetch(
+        import.meta.env.VITE_APP_GOOGLE_SHEETS_API_URL,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!sheetResponse.ok)
+        throw new Error("Failed to send data to Google Sheets.");
 
       window.sessionStorage.setItem("formSubmitted", true);
       reset();
@@ -157,3 +141,46 @@ export function FormTelegram() {
     </form>
   );
 }
+
+const Input = ({
+  type = "text",
+  id,
+  name,
+  label,
+  className,
+  required,
+  register,
+  errors,
+  ...props
+}) => {
+  return (
+    <div className="relative">
+      <label htmlFor={id} className="leading-7 text-base text-slate-600">
+        {label}
+      </label>
+      {type === "textarea" ? (
+        <textarea
+          id={id}
+          name={name}
+          className={`w-full bg-slate-100 bg-opacity-50 rounded border border-slate-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-slate-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out ${className}`}
+          required={required}
+          {...register(name, { required: `${label} is required` })}
+          {...props}
+        ></textarea>
+      ) : (
+        <input
+          type={type}
+          id={id}
+          name={name}
+          className={`w-full bg-slate-100 bg-opacity-50 rounded border border-slate-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-slate-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
+          required={required}
+          {...register(name, { required: `${label} is required` })}
+          {...props}
+        />
+      )}
+      {errors[name] && (
+        <span className="text-red-500 text-sm">{errors[name].message}</span>
+      )}
+    </div>
+  );
+};
