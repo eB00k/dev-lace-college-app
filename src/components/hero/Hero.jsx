@@ -1,21 +1,7 @@
-import React from "react";
 import Button from "../button/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { twMerge } from "tailwind-merge";
 
-function HighlightedText({ children, className = "" }) {
-  return (
-    <span
-      className={twMerge(
-        "bg-h-gradient inline bg-no-repeat bg-full-40 bg-bottom-10",
-        className
-      )}
-    >
-      {children}
-    </span>
-  );
-}
 function Hero() {
   const { t } = useTranslation();
   return (
@@ -24,7 +10,7 @@ function Hero() {
         <div className="max-w-[800px]">
           <h1 className="text-3xl md:text-5xl font-bold max-w-[740px]">
             <span className="block ">{t("home.heroSection.welcome")}</span>
-            <HighlightedText>{t("home.heroSection.title")}</HighlightedText>
+            {t("home.heroSection.title")}
           </h1>
           <p className="my-6 text-base">{t("home.heroSection.description")}</p>
           <div className="flex justify-center gap-4">

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { HeaderContext } from "./Header";
 import { twMerge } from "tailwind-merge";
 import { AlignJustify } from "lucide-react";
 import { navLinks } from "../../config/constants";
-import logo from "../../assets/la-yellow-logo.png";
-import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/la-yellow-logo.webp";
+import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import LanguageSelecter from "../langage-selector/LanguageSelecter";
 import { useTranslation } from "react-i18next";
@@ -18,6 +18,7 @@ const MobileNavToggle = () => {
       <button
         type="button"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        aria-label="Menu"
         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
       >
         <AlignJustify

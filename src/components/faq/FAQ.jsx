@@ -18,7 +18,7 @@ const AccordionItem = ({ title, content }) => {
         aria-expanded={isOpen}
         aria-controls={`basic-collapse-${title}`}
       >
-        <h5 className="w-full text-center sm:text-start">{title}</h5>
+        <div className="w-full text-center sm:text-start">{title}</div>
         <svg
           className={`text-slate-900 transition duration-500 group-hover:text-main ${isOpen ? "accordion-active:rotate-180" : ""}`}
           width="22"

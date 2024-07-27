@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useCallback } from "react";
-import { IoClose } from "react-icons/io5";
+import { useEffect, useRef } from "react";
+import { X } from "lucide-react";
 import Button from "../button/Button";
 import useDialogClick from "../../hooks/useDialogClick";
 
@@ -33,14 +33,14 @@ const BaseModal = ({
         <span className="text-md font-semibold text-slate-700">{label}</span>
         <Button
           className={
-            "flex items-center justify-center rounded-md bg-slate-100 p-2 text-red-600 shadow-sm"
+            "flex items-center justify-center rounded-md bg-slate-100 p-2 text-red-600 shadow-sm cursor-pointer"
           }
           onClick={closeModal}
         >
-          <IoClose className="text-lg" />
+          <X size={32} className="cursor-pointer" />
         </Button>
       </div>
-      <div className={""}>{children}</div>
+      <div>{children}</div>
     </dialog>
   );
 };

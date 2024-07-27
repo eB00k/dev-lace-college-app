@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,13 +7,15 @@ import {
 import ReactGA from "react-ga4";
 import Home from "../pages/home/Home";
 import BaseLayout from "../components/layouts/BaseLayout";
-import AboutPage from "../pages/about/AboutPage";
-import Academics from "../pages/academics/Academics";
-import Admission from "../pages/admission/Admission";
 import Spinner from "../components/spinner/Spinner";
-import ThankYou from "../pages/thank-you/ThankYou";
-import CareerTestPage from "../pages/careertest/CareerTest";
-import NotFound from "../pages/not-found/NotFound";
+
+// Lazy load the pages
+const AboutPage = lazy(() => import("../pages/about/AboutPage"));
+const Academics = lazy(() => import("../pages/academics/Academics"));
+const Admission = lazy(() => import("../pages/admission/Admission"));
+const ThankYou = lazy(() => import("../pages/thank-you/ThankYou"));
+const CareerTestPage = lazy(() => import("../pages/careertest/CareerTest"));
+const NotFound = lazy(() => import("../pages/not-found/NotFound"));
 
 // Initialize Google Analytics
 ReactGA.initialize("G-2M2GPPXSPW");
@@ -47,10 +49,6 @@ const router = createBrowserRouter([
         path: "/thank-you",
         element: <ThankYou />,
       },
-      // {
-      //   path: "*",
-      //   element: <NotFound />,
-      // },
     ],
   },
   {
